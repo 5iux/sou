@@ -29,7 +29,7 @@ if ($q==""||$q==null) {
   <link rel="apple-touch-icon-precomposed" href="icon/300x300.png" />
   <meta name="msapplication-TileImage" content="icon/300x300.png" />
   <title>简单搜索</title>
-  <!--link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"-->
+  <!--简单搜索，来自https://github.com/5iux/sou/；请保留这句版权信息，感恩-->
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
