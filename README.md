@@ -1,5 +1,5 @@
 # 简单搜索
-![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.jpg)
+![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.gif)
 
 用惯了各种导航首页，满屏幕尽是各种不厌其烦的广告和资讯；尝试自己写个自己的主页，这已经是第四版了。
 
