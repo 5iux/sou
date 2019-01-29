@@ -6,10 +6,10 @@ $t=htmlspecialchars($_GET["t"]);
 $q=htmlspecialchars($_GET["q"]);
 if ($q==""||$q==null) {
 }else{
-  if ($t=="g"){
-     echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
-  }else{
+  if ($t=="b"){
      echo'<script>window.location.href="//baidu.com/s?ie=utf-8&word='.$q.'"</script>';
+  }else{
+     echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }
 };
 ?>
@@ -29,10 +29,20 @@ if ($q==""||$q==null) {
   <link rel="apple-touch-icon-precomposed" href="icon/300x300.png" />
   <meta name="msapplication-TileImage" content="icon/300x300.png" />
   <title>简单搜索</title>
-  <!--简单搜索，来自https://github.com/5iux/sou/；请保留这句版权信息，感恩-->
+  <!--link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"-->
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?99243244082272ba565ed15cb2e62619";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 </head>
 <body>
 <div id="menu"><i></i></div>
@@ -63,6 +73,7 @@ if ($q==""||$q==null) {
         <li><a href="https://www.weibo.com" target="_blank">微博</a></li>
         <li><a href="https://pan.baidu.com/" target="_blank">百度网盘</a></li>
         <li><a href="https://ip.yyv.me/" target="_blank">IP检测</a></li>
+        <li><a href="https://houxu.app/" target="_blank">后续</a></li>
         <li class="title"><i class="fa fa-film"></i> 视频媒体</li>
         <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
         <li><a href="https://v.qq.com/" target="_blank">腾讯视频</a></li>
@@ -103,14 +114,14 @@ $(document).ready(function() {
             if (wd == "" || wd == null) {
                 window.location.href = "https://www.google.com/?hl=zh";
             } else {
-                $(".t").val("g");
+                $(".t").val();
                 $("form").submit();
             }
         } else {
             if (wd == "" || wd == null) {
                 window.location.href = "https://www.baidu.com/?tn=simple";
             } else {
-                $(".t").val();
+                $(".t").val("b");
                 $("form").submit();
             }
         }

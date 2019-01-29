@@ -14,11 +14,11 @@ a{text-decoration: none; color: #000;}
 .con .sou{max-width: 680px; position: relative; width: calc(100% - 60px); min-width: 320px; margin: 0 auto;}
 .con .sou form{width: 100%; /*border: 1px solid #ddd;*/ height: 50px; display: block; margin: 10px auto 30px; position: relative;}
 .con .sou form .wd{width: 100%; height: 100%; display: block; border: 1px solid #ccc; line-height: 100%; text-indent: 20px; font-size: 18px; }
-.con .sou form .wd:focus{ border: 1px solid #bbf;}
-.con .sou form button{width: 50px; height: 50px; display: block; position: absolute; z-index: 10; right:-1px; top: 1px; background: url(icon/btn2.svg) no-repeat center/60% #fff;}
-.con .sou ul{width: 284px; height: 40px; margin: 0 auto;}
-.con .sou ul li{width: 120px; margin: 0 10px; float: left; border: 1px solid #f1f1f1; font-size: 16px; height: 40px; line-height: 40px; text-align: center; text-indent: 30px; cursor: pointer; position: relative; border-radius: 20px;}
-.con .sou ul li:active{color: #f03;}
+.con .sou form .wd:focus{ background: #eee; }
+.con .sou form button{width: 50px; height: 50px; display: block; position: absolute; z-index: 10; right:-1px; top: 1px; background: url(icon/btn2.svg) no-repeat center/60%;}
+.con .sou ul{width: 280px; height: 40px; margin: 0 auto;}
+.con .sou ul li{width: 120px; margin: 0 10px; float: left; background: #eee; font-size: 16px; height: 40px; line-height: 40px; text-align: center; text-indent: 30px; cursor: pointer; position: relative; border-radius: 20px;}
+.con .sou ul li:active{background: #ddd;}
 .con .sou ul li i{position: absolute; display: block; width: 40px; height: 40px; left: 0; border-radius: 50%; background-size: cover; background-repeat: no-repeat; background-position: center; transform: scale(0.7);}
 .foot{position: absolute; bottom: 10px; z-index: 1000; text-align: center; width: 100%; color: #999; height: 20px; line-height: 20px; font-size: 12px;}
 #menu{width: 50px; height: 50px; position: absolute; right: 10px; top: 10px; z-index: 2000000; cursor: pointer; transition: 0.5s;}
@@ -26,10 +26,10 @@ a{text-decoration: none; color: #000;}
 #menu i:before{content: ''; width: 30px; height: 2px; top: -8px; background: #aaa; position: absolute; left: 0; transition: 0.5s;}
 #menu i:after{content: ''; width: 30px; height: 2px; bottom: -8px; background: #aaa; position: absolute; left: 0; transition: 0.5s;}
 #menu.on{ right: 270px; }
-#menu.on i{height: 0;}
-#menu.on i:before{top: -1px; transform: rotate(225deg); /*background: #fff;*/}
-#menu.on i:after{bottom: -1px; transform: rotate(-225deg); /*background: #fff;*/}
-.list{ width:227px;  padding:0 20px; height: 100%; overflow: hidden; overflow-y:auto; position: absolute; right: -7px; z-index: 2000; background:#f1f1f1f1; transition: 0.3s all linear; opacity: 0.95; }
+#menu.on i{ width: 20px;}
+#menu.on i:before{top: -5px; transform: rotate(45deg); width: 14px; right: -1px; left: auto;}
+#menu.on i:after{bottom: -5px; transform: rotate(-45deg); width: 14px; right: -1px; left: auto;}
+.list{ width:227px;  padding:0 20px; height: 100%; overflow: hidden; overflow-y:auto; position: absolute; right: -7px; z-index: 2000; background:#f1f1f1; transition: 0.3s all linear; opacity: 0.95; }
 .list.closed{right: -270px;}
 .list ul{ width:220px; float: left; padding: 20px 0; }
 .list ul li{ float: left; margin: 5px; width:100px; height: 30px; text-align: left; line-height: 30px; font-size: 12px;}
@@ -54,7 +54,7 @@ a{text-decoration: none; color: #000;}
     }
 
     .con .sou ul {
-        width: 244px;
+        width: 240px;
     }
 
     .con .sou ul li {
