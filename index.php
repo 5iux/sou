@@ -29,27 +29,16 @@ if ($q==""||$q==null) {
   <link rel="apple-touch-icon-precomposed" href="icon/300x300.png" />
   <meta name="msapplication-TileImage" content="icon/300x300.png" />
   <title>简单搜索</title>
-  <!--link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"-->
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?99243244082272ba565ed15cb2e62619";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
 </head>
 <body>
 <div id="menu"><i></i></div>
 <div class="con">
 
-        <div class="shlogo">
-          <a href="#"><img src="img/logo.svg" alt=""></a></div>
+        <div class="shlogo"></div>
         <div class="sou">
           <form action="" method="get" target="_self">
              <input class="t" type="text" value="" name="t" hidden>
