@@ -9,7 +9,7 @@ if ($q==""||$q==null) {
   if ($t=="b"){
      echo'<script>window.location.href="//baidu.com/s?ie=utf-8&word='.$q.'"</script>';
   }else{
-     echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
+      echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }
 };
 ?>
@@ -19,19 +19,37 @@ if ($q==""||$q==null) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="icon" href="icon/32x32.png" sizes="16x16" />
-  <link rel="icon" href="icon/32x32.png" sizes="32x32" />
-  <link rel="icon" href="icon/48x48.png" sizes="48x48" />
-  <link rel="icon" href="icon/64x64.png" sizes="64x64" />
-  <link rel="icon" href="icon/96x96.png" sizes="96x96" />
-  <link rel="icon" href="icon/128x128.png" sizes="128x128" />
-  <link rel="icon" href="icon/192x192.png" sizes="192x192" />
-  <link rel="apple-touch-icon-precomposed" href="icon/300x300.png" />
-  <meta name="msapplication-TileImage" content="icon/300x300.png" />
+  <link rel="icon" href="icon/32.png" sizes="16x16" />
+  <link rel="icon" href="icon/32.png" sizes="32x32" />
+  <link rel="icon" href="icon/48.png" sizes="48x48" />
+  <link rel="icon" href="icon/64.png" sizes="64x64" />
+  <link rel="icon" href="icon/96.png" sizes="96x96" />
+  <link rel="icon" href="icon/128.png" sizes="128x128" />
+  <link rel="icon" href="icon/192.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="icon/300.png" />
+  <meta name="msapplication-TileImage" content="icon/300.png" />
+  <!-- 强制移动设备以app模式打开页面(即在移动设备下全屏，仅支持部分浏览器) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes"><!--UC强制全屏-->
+    <meta name="browsermode" content="application"><!--UC应用模式-->
+    <meta name="x5-fullscreen" content="true"><!--QQ强制全屏-->
+    <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
   <title>简单搜索</title>
+  <!--link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"-->
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?99243244082272ba565ed15cb2e62619";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
 </head>
 <body>
@@ -61,7 +79,6 @@ if ($q==""||$q==null) {
         <li><a href="https://www.taobao.com" target="_blank">淘宝网</a></li>
         <li><a href="https://www.weibo.com" target="_blank">微博</a></li>
         <li><a href="https://pan.baidu.com/" target="_blank">百度网盘</a></li>
-        <li><a href="https://ip.yyv.me/" target="_blank">IP检测</a></li>
         <li><a href="https://houxu.app/" target="_blank">后续</a></li>
         <li class="title"><i class="fa fa-film"></i> 视频媒体</li>
         <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
@@ -74,8 +91,6 @@ if ($q==""||$q==null) {
         <li><a href="https://www.80s.tw/" target="_blank">80s影视</a></li>
         <li><a href="http://www.qtfy7.com/" target="_blank">且听风吟</a></li>
         <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
-        <li><a href="http://vip.yyv.me/" target="_blank">VIP视频</a></li>
-        <li><a href="https://music.yyv.me/" target="_blank">音乐解析</a></li>
         <li class="title"><i class="fa fa-crop"></i> 设计视觉</li>
         <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
         <li><a href="https://www.behance.net/" target="_blank">Behance</a></li>
