@@ -8,6 +8,8 @@ if ($q==""||$q==null) {
 }else{
   if ($t=="b"){
      echo'<script>window.location.href="//baidu.com/s?ie=utf-8&word='.$q.'"</script>';
+  }else if($t=="g"){
+      echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }else{
       echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }
@@ -60,7 +62,7 @@ var _hmt = _hmt || [];
         <div class="sou">
           <form action="" method="get" target="_self">
              <input class="t" type="text" value="" name="t" hidden>
-             <input class="wd" type="text" placeholder="请输入搜索内容" name="q" autocomplete="off">
+             <input class="wd" type="text" placeholder="请输入搜索内容" name="q">
              <button></button>
           </form>
           <ul>
@@ -118,7 +120,7 @@ $(document).ready(function() {
             if (wd == "" || wd == null) {
                 window.location.href = "https://www.google.com/?hl=zh";
             } else {
-                $(".t").val();
+                $(".t").val("g");
                 $("form").submit();
             }
         } else {
