@@ -1,149 +1,183 @@
-
 <?php
 //禁用错误报告
 error_reporting(0);
-$t=htmlspecialchars($_GET["t"]);
-$q=htmlspecialchars($_GET["q"]);
-if ($q==""||$q==null) {
+$t=htmlspecialchars($_POST["t"]);
+$q=htmlspecialchars($_POST["q"]);
+$v=htmlspecialchars($_GET["v"]);
+if ($q=="") {
 }else{
   if ($t=="b"){
-     echo'<script>window.location.href="//baidu.com/s?ie=utf-8&word='.$q.'"</script>';
+     echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
   }else if($t=="g"){
       echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }else{
-      echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
+  		//默认百度
+  		echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';  	
   }
 };
 ?>
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="icon" href="icon/32.png" sizes="16x16" />
-  <link rel="icon" href="icon/32.png" sizes="32x32" />
-  <link rel="icon" href="icon/48.png" sizes="48x48" />
-  <link rel="icon" href="icon/64.png" sizes="64x64" />
-  <link rel="icon" href="icon/96.png" sizes="96x96" />
-  <link rel="icon" href="icon/128.png" sizes="128x128" />
+  <meta http-equiv="Cache-Control" content="no-siteapp">
   <link rel="icon" href="icon/192.png" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="icon/300.png" />
   <meta name="msapplication-TileImage" content="icon/300.png" />
-  <!-- 强制移动设备以app模式打开页面(即在移动设备下全屏，仅支持部分浏览器) -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="full-screen" content="yes"><!--UC强制全屏-->
-    <meta name="browsermode" content="application"><!--UC应用模式-->
-    <meta name="x5-fullscreen" content="true"><!--QQ强制全屏-->
-    <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+  <link rel="shortcut icon" href="icon/32.png"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="full-screen" content="yes"><!--UC强制全屏-->
+  <meta name="browsermode" content="application"><!--UC应用模式-->
+  <meta name="x5-fullscreen" content="true"><!--QQ强制全屏-->
+  <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
   <title>简单搜索</title>
-  <!--link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"-->
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
-  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?99243244082272ba565ed15cb2e62619";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+  <link href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.8.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
+
 <body>
-<div id="menu"><i></i></div>
-<div class="con">
-
-        <div class="shlogo"></div>
-        <div class="sou">
-          <form action="" method="get" target="_self">
-             <input class="t" type="text" value="" name="t" hidden>
-             <input class="wd" type="text" placeholder="请输入搜索内容" name="q">
-             <button></button>
-          </form>
-          <ul>
-            <li data-s="baidu"><i style="background-image: url(img/baidu.svg);"></i>百度一下</li>
-            <li data-s="google"><i style="background-image: url(img/g.svg);"></i>Google</li>
-          </ul>
-
+    <div id="menu"><i></i></div>
+    <!--div class="home"><a href="https://yyv.me/"><i class="fas fa-home"></i></a></div-->
+    <div class="list closed">
+        <ul>
+            <li class="title"><i class="fa fa-fire"></i> 常用</li>
+            <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="far fa-envelope" style="color: #f03;"></i>Gmail</a></li>
+            <li><a rel="nofollow" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="color: #93009f;"></i>Instagram</a></li>
+            <li><a rel="nofollow" href="https://www.taobao.com" target="_blank"><i class="fas fa-cart-plus" style="color: #ff6019;"></i>淘宝网</a></li>
+            <li><a rel="nofollow" href="https://www.weibo.com" target="_blank"><i class="fab fa-weibo" style="color: #e6162d;"></i>微博</a></li>
+            <li><a rel="nofollow" href="https://translate.google.cn/?hl=zh-CN" target="_blank"><i class="fas fa-language" style="color: #02f;"></i>谷歌翻译</a></li>
+            <li><a rel="nofollow" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" style="color: #00bcff;"></i>Twitter</a></li>
+            <li><a rel="nofollow" href="https://duckduckgo.com/?kl=cn-zh&amp;l=cn-zh" target="_blank"><i class="fas fa-mask" style="color:#fcb600"></i>鸭鸭走</a></li>
+            <li><a rel="nofollow" href="https://feedly.com" target="_blank"><i class="fas fa-rss" style="color: #11dd00;"></i>Feedly</a></li>
+            <li><a rel="nofollow" href="https://pan.baidu.com" target="_blank"><i class="fas fa-cloud-download-alt" style="color: #148bfe;"></i>百度网盘</a></li>
+            <li class="title"><i class="fas fa-film"></i> 视频媒体</li>
+            <li><a rel="nofollow" href="https://sou.yyv.me/movies/" target="_blank"><i class="fab fa-searchengin" style="color:#f93;"></i>影视搜索</a></li>
+            <li><a rel="nofollow" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube" style="color:#f03;"></i>Youtube</a></li>
+            <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i class="fas fa-play" style="color:#2a0;"></i>腾讯视频</a></li>
+            <li><a rel="nofollow" href="https://www.youku.com/" target="_blank"><i class="far fa-play-circle" style="color:#09e;"></i>优酷</a></li>
+            <li><a rel="nofollow" href="https://www.iqiyi.com/" target="_blank"><i class="fas fa-video" style="color:#1d0;"></i>爱奇艺</a></li>
+            <li><a rel="nofollow" href="http://www.zimuzu.io/" target="_blank"><i class="fas fa-closed-captioning"></i>字幕组</a></li>
+            <li><a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank"><i class="fas fa-mountain" style="color:#f33;"></i>ACFUN</a></li>
+            <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><i class="fas fa-compact-disc" style="color:#09e;"></i>哔哩哔哩</a></li>
+            <li><a rel="nofollow" href="https://sou.yyv.me/tv/" target="_blank"><i class="fas fa-satellite-dish" style="color:#9ae;"></i>直播电视</a></li>
+            <li><a rel="nofollow" href="https://music.yyv.me/" target="_blank"><i class="fas fa-music" style="color:#f4a;"></i>音乐解析</a></li>
+            <li class="title"><i class="far fa-object-ungroup"></i> 设计视觉</li>
+            <li><a rel="nofollow" href="https://web.yyv.me/" target="_blank"><i class="fas fa-map-signs"></i>设计导航</a></li>
+            <li><a rel="nofollow" href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest" style="color:#e02;"></i>Pinterest</a></li>
+            <li><a rel="nofollow" href="https://www.behance.net/" target="_blank"><i class="fab fa-behance" style="color:#56f;"></i>Behance</a></li>
+            <li><a rel="nofollow" href="https://www.dribbble.com/" target="_blank"><i class="fab fa-dribbble" style="color:#e48;"></i>Dribbble</a></li>
+            <li><a rel="nofollow" href="https://huaban.com/" target="_blank"><i class="fas fa-spa" style="color:#f06;"></i>花瓣</a></li>
+            <li><a rel="nofollow" href="https://www.zcool.com.cn/" target="_blank"><i class="far fa-object-group" style="color:#f90;"></i>站酷</a></li>
+            <li><a rel="nofollow" href="https://www.iconfont.cn/" target="_blank"><i class="fas fa-pencil-ruler" style="color: #ff6019;"></i>阿里图标</a></li>
+            <li><a rel="nofollow" href="https://www.iconfinder.com/" target="_blank"><i class="fas fa-eye"></i>IconFinder</a></li>
+            <li><a rel="nofollow" href="https://uiiiuiii.com/" target="_blank"><i class="fas fa-chalkboard-teacher" style="color:#0aa;"></i>优设教程</a></li>
+            <li class="title"><i class="fas fa-terminal"></i> 开发</li>
+            <li><a rel="nofollow" href="http://www.w3school.com.cn/" target="_blank"><i class="fab fa-css3" style="color:#c03;"></i>W3school</a></li>
+            <li><a rel="nofollow" href="https://github.com/" target="_blank"><i class="fab fa-github"></i>Github</a></li>
+            <li><a rel="nofollow" href="https://codepen.io/" target="_blank"><i class="fab fa-codepen"></i>Codepen</a></li>
+            <li><a rel="nofollow" href="https://ping.pe" target="_blank"><i class="fas fa-network-wired" style="color:#1d0;"></i>Ping.pe</a></li>
+            <li><a rel="nofollow" href="https://www.mdeditor.com/" target="_blank"><i class="fab fa-markdown" style="color:#09f;"></i>MD编辑器</a></li>
+            <li><a rel="nofollow" href="https://www.52pojie.cn/" target="_blank"><i class="fas fa-theater-masks" style="color:#f03;"></i>吾爱破解</a></li>
+            <li><a rel="nofollow" href="https://segmentfault.com/" target="_blank"><i class="fas fa-comment-dots" style="color:#096;"></i>SF思否</a></li>
+            <li><a rel="nofollow" href="http://web.jobbole.com/" target="_blank"><i class="fas fa-user-secret" style="color: #09c;"></i>伯乐在线</a></li>
+            <li><a rel="nofollow" href="https://miku.tools/" target="_blank"><i class="fas fa-tools"></i>Miku工具</a></li>
+            <li><a rel="nofollow" href="http://cubic-bezier.com" target="_blank"><i class="fas fa-bezier-curve" style="color: #f08;"></i>贝赛尔曲线</a></li>
+            <li><a rel="nofollow" href="https://cdnjs.com/" target="_blank"><i class="fab fa-js-square" style="color: #e52;"></i>CdnJs</a></li>
+            <li><a rel="nofollow" href="https://fontawesome.com/icons?d=gallery&m=free" target="_blank"><i class="fab fa-font-awesome" style="color: #4af;"></i>Font A.</a></li>
+            <li><a rel="nofollow" href="https://5iux.cn/base64" target="_blank"><i class="far fa-file-code" style="color:#1d0;"></i>Base64</a></li>
+            <li><a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank"><i class="fab fa-windows" style="color: #48c;"></i>MSDN下载</a></li>
+        </ul>
+    </div>
+    <div id="tp-weather-widget"></div>
+    <div id="content">
+        <div class="con">
+            <div class="shlogo"></div>
+            <div class="sou">
+                <form action="" method="post" target="_self">
+                    <input class="t" type="text" value="" name="t" hidden>
+                    <input class="wd" type="text" placeholder="请输入搜索内容" name="q" x-webkit-speech lang="zh-CN">
+                    <button><i class="fab fa-sistrix"></i></button>
+                </form>
+                <ul>
+                    <li data-s="baidu" target="_blank"><i style="background-image: url(icon/baidu.svg);"></i>百度一下</li>
+                    <li data-s="google" target="_blank"><i style="background-image: url(icon/g.svg);"></i>Google</li>
+                </ul>
+            </div>
         </div>
-</div>
-<div class="list closed">
-    <ul>
-        <li class="title"><i class="fa fa-fire"></i> 常用</li>
-        <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-        <li><a href="https://www.taobao.com" target="_blank">淘宝网</a></li>
-        <li><a href="https://www.weibo.com" target="_blank">微博</a></li>
-        <li><a href="https://pan.baidu.com/" target="_blank">百度网盘</a></li>
-        <li><a href="https://houxu.app/" target="_blank">后续</a></li>
-        <li class="title"><i class="fa fa-film"></i> 视频媒体</li>
-        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-        <li><a href="https://v.qq.com/" target="_blank">腾讯视频</a></li>
-        <li><a href="https://www.youku.com/" target="_blank">优酷</a></li>
-        <li><a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a></li>
-        <li><a href="http://www.zimuzu.io/" target="_blank">字幕组</a></li>
-        <li><a href="https://www.dytt8.net/" target="_blank">电影天堂</a></li>
-        <li><a href="http://lm.didibib.ml" target="_blank">菲菲影视</a></li>
-        <li><a href="https://www.80s.tw/" target="_blank">80s影视</a></li>
-        <li><a href="http://www.qtfy7.com/" target="_blank">且听风吟</a></li>
-        <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
-        <li class="title"><i class="fa fa-crop"></i> 设计视觉</li>
-        <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
-        <li><a href="https://www.behance.net/" target="_blank">Behance</a></li>
-        <li><a href="https://www.dribbble.com/" target="_blank">Dribbble</a></li>
-        <li><a href="https://loading.io/" target="_blank">loading</a></li>
-        <li><a href="https://www.zcool.com.cn/" target="_blank">站酷</a></li>
-        <li><a href="https://www.iconfont.cn/" target="_blank">阿里图标</a></li>
-        <li><a href="https://www.iconfinder.com/" target="_blank">IconFinder</a></li>
-        <li><a href="https://uiiiuiii.com/" target="_blank">优设教程</a></li>
-        <li style="width: 210px;"><a href="https://web.yyv.me/" style="color: #777; background: #fff;" target="_blank">更多设计站>></a></li>
-        <li class="title"><i class="fa fa-code"></i> 开发</li>
-        <li><a href="http://www.w3school.com.cn/" target="_blank">W3school</a></li>
-        <li><a href="https://github.com/" target="_blank">Github</a></li>
-        <li><a href="http://ping.chinaz.com/" target="_blank">站长Ping</a></li>
-        <li><a href="https://tools.ipip.net/traceroute.php?id=68&v=4" target="_blank">Traceroute</a></li>
-        <li><a href="https://www.52pojie.cn/" target="_blank">吾爱破解</a></li>
-    </ul>
-</div>
-<script>
-$(document).ready(function() {
-    $(".sou li").click(function() {
-        var dt = $(this).attr('data-s');
-        wd = $(".wd").val();
-        if (dt == "google") {
-            if (wd == "" || wd == null) {
-                window.location.href = "https://www.google.com/?hl=zh";
-            } else {
-                $(".t").val("g");
-                $("form").submit();
+        <script>
+        $(document).ready(function() {
+            //判断窗口大小，添加输入框自动完成
+            var wid = $("body").width();
+            if (wid < 640) {
+                $(".wd").attr('autocomplete', 'off');
             }
-        } else {
-            if (wd == "" || wd == null) {
-                window.location.href = "https://www.baidu.com/?tn=simple";
-            } else {
-                $(".t").val("b");
-                $("form").submit();
-            }
-        }
+            //按钮
+            $(".sou li").click(function() {
+                var dt = $(this).attr('data-s');
+                wd = $(".wd").val();
+                if (dt == "google") {
+                    if (wd == "") {
+                        window.location.href = "https://www.google.com/?hl=zh";
+                    } else {
+                        $(".t").val("g");
+                        $("form").submit();
+                    }
+                } else {
+                    if (wd == "") {
+                        window.location.href = "https://www.baidu.com/?tn=simple";
+                    } else {
+                        $(".t").val("b");
+                        $("form").submit();
+                    }
+                }
 
-    });
-    $("#menu").click(function(event) {
-        $(this).toggleClass('on');
-        $(".list").toggleClass('closed');
-    });
-    $(".con").click(function(event) {
-        $(".on").removeClass('on');
-        $(".list").addClass('closed');
-    });
+            });
+            //菜单点击
+            $("#menu").click(function(event) {
+                $(this).toggleClass('on');
+                $(".list").toggleClass('closed');
+                $("#tp-weather-widget").toggleClass('hidden');
+            });
+            $("#content").click(function(event) {
+                $(".on").removeClass('on');
+                $(".list").addClass('closed');
+                $("#tp-weather-widget").removeClass('hidden');
+            });
+            /*
+               为界面干净无广告，移除天气插件版权信息
+               天气插件版权备注到这里：心知天气版权所有；
+               需要请到：https://www.seniverse.com/widget/  
+            */
+            $("#tp-weather-widget").mouseover(function(event) {
+                $("span:contains('心知天气')").parent().remove();
+            });
+        });
+        </script>
+
+<!--天气插件开始-->
+<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
+<script>tpwidget("init", {
+    "flavor": "slim",
+    "location": "WWE0TGW4PX6N",
+    "geolocation": "enabled",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "chameleon",
+    "container": "tp-weather-widget",
+    "bubble": "enabled",
+    "alarmType": "badge",
+    "uid": "UFFFC70B02",
+    "hash": "8ca5fdc919e446872f170fb32648c78c"
 });
-</script>
+tpwidget("show");</script>
+<!--天气插件结束-->
 
-<div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
+        <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
+    </div>
 </body>
 </html>
