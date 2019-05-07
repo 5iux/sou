@@ -1,21 +1,3 @@
-<?php
-//禁用错误报告
-error_reporting(0);
-$t=htmlspecialchars($_POST["t"]);
-$q=htmlspecialchars($_POST["q"]);
-$v=htmlspecialchars($_GET["v"]);
-if ($q=="") {
-}else{
-  if ($t=="b"){
-     echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
-  }else if($t=="g"){
-      echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
-  }else{
-  		//默认百度
-  		echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';  	
-  }
-};
-?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -115,27 +97,30 @@ if ($q=="") {
             if (wid < 640) {
                 $(".wd").attr('autocomplete', 'off');
             }
-            //按钮
-            $(".sou li").click(function() {
-                var dt = $(this).attr('data-s');
-                wd = $(".wd").val();
-                if (dt == "google") {
-                    if (wd == "") {
-                        window.location.href = "https://www.google.com/?hl=zh";
-                    } else {
-                        $(".t").val("g");
-                        $("form").submit();
-                    }
-                } else {
-                    if (wd == "") {
-                        window.location.href = "https://www.baidu.com/?tn=simple";
-                    } else {
-                        $(".t").val("b");
-                        $("form").submit();
-                    }
-                }
+            //Form
+              function baidu()
 
-            });
+    {
+
+    document.searchbox.action="https://kilo.dev/labs/post/s.php";
+
+document.searchbox.method="get";
+
+    document.searchbox.submit();
+
+    }
+
+function google()
+
+    {
+
+    document.searchbox.action="https://www.baidu.com/s";
+
+document.searchbox.method="get";
+
+    document.searchbox.submit();
+
+    } 
             //菜单点击
             $("#menu").click(function(event) {
                 $(this).toggleClass('on');
