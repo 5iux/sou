@@ -1,3 +1,21 @@
+<?php
+//禁用错误报告
+error_reporting(0);
+$t=htmlspecialchars($_POST["t"]);
+$q=htmlspecialchars($_POST["q"]);
+$v=htmlspecialchars($_GET["v"]);
+if ($q=="") {
+}else{
+  if ($t=="b"){
+     echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
+  }else if($t=="g"){
+      echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
+  }else{
+  		//默认百度
+  		echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';  	
+  }
+};
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -81,14 +99,12 @@
             <div class="shlogo"></div>
             <div class="sou">
                 <form action="https://kilo.dev/labs/post/g.php" method="get" target="_self">
-                    <input type="text" name="wd" placeholder="请输入搜索内容" name="search" x-webkit-speech lang="zh-CN">
+                    <input class="wd" type="text" placeholder="请输入搜索内容" name="search" x-webkit-speech lang="zh-CN">
                     <button><i class="fab fa-sistrix"></i></button>
                 </form>
                 <ul>
-                    <li data-s="baidu" target="_blank">    <input type="submit" value="国内搜索(推荐)" onClick="baidu()"/>
-</li>
-                    <li data-s="google" target="_blank">    <input type="submit" value="国内搜索(推荐)" onClick="google()"/>
-</li>
+                    <li data-s="baidu" target="_blank"><i style="background-image: url(icon/baidu.svg);"></i>百度一下</li>
+                    <li data-s="google" target="_blank"><i style="background-image: url(icon/g.svg);"></i>Google</li>
                 </ul>
             </div>
         </div>
@@ -99,30 +115,27 @@
             if (wid < 640) {
                 $(".wd").attr('autocomplete', 'off');
             }
-            //Form
-              function baidu()
+            //按钮
+            $(".sou li").click(function() {
+                var dt = $(this).attr('data-s');
+                wd = $(".wd").val();
+                if (dt == "google") {
+                    if (wd == "") {
+                        window.location.href = "https://www.google.com/?hl=zh";
+                    } else {
+                        $(".t").val("g");
+                        $("form").submit();
+                    }
+                } else {
+                    if (wd == "") {
+                        window.location.href = "https://www.baidu.com/?tn=simple";
+                    } else {
+                        $(".t").val("b");
+                        $("form").submit();
+                    }
+                }
 
-    {
-
-    document.searchbox.action="https://kilo.dev/labs/post/s.php";
-
-document.searchbox.method="get";
-
-    document.searchbox.submit();
-
-    }
-
-function google()
-
-    {
-
-    document.searchbox.action="https://www.baidu.com/s";
-
-document.searchbox.method="get";
-
-    document.searchbox.submit();
-
-    } 
+            });
             //菜单点击
             $("#menu").click(function(event) {
                 $(this).toggleClass('on');
