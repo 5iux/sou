@@ -98,9 +98,8 @@ if ($q=="") {
         <div class="con">
             <div class="shlogo"></div>
             <div class="sou">
-                <form action="" method="post" target="_self">
-                    <input class="t" type="text" value="" name="t" hidden>
-                    <input class="wd" type="text" placeholder="请输入搜索内容" name="q" x-webkit-speech lang="zh-CN">
+                <form action="https://kilo.dev/labs/post/g.php" method="get" target="_self">
+                    <input class="wd" type="text" placeholder="请输入搜索内容" name="search" x-webkit-speech lang="zh-CN">
                     <button><i class="fab fa-sistrix"></i></button>
                 </form>
                 <ul>
