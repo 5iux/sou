@@ -7,7 +7,7 @@
 ### php版本
 [https://sou.yyv.me/](https://sou.yyv.me/) 
 ### 静态js版本:
-[https://sou.yyv.me/s.html](https://sou.yyv.me/s.html) 
+[https://5iux.github.io/](https://5iux.github.io/) 
 
 我这个只是个界面示例，有需求还是自己改，不喜欢php想换成js也可以；以前自己试过反代，还是小范围用的，没两天弄死一个好域名，不敢了，上谷歌大家还是自备梯子吧，这里不提供了。
 
