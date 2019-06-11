@@ -1,4 +1,12 @@
-@import url(//fonts.loli.net/earlyaccess/notosansscsliced.css);
+/*
+作者:D.Young
+主页：https://yyv.me/
+github：https://github.com/5iux/sou
+日期：2019-06-11
+版权所有，请勿删除
+*/
+
+/*@import url(//fonts.loli.net/earlyaccess/notosansscsliced.css);*/
 
 * {
     padding: 0;
@@ -17,7 +25,7 @@ body {
 }
 
 html {
-    font-family:'Noto Sans SC Sliced', PingFangSC-Light, Microsoft YaHei UI Light, Microsoft YaHei UI, Microsoft YaHei, helvetica, sans-serif;
+    font-family: 'Noto Sans SC Sliced', PingFangSC-Light, Microsoft YaHei UI, Microsoft YaHei, helvetica, sans-serif;
     font-weight: 300;
     color: #000;
 }
@@ -123,9 +131,9 @@ a {
     position: absolute;
     z-index: 10;
     right: 6px;
-    top:6px;
+    top: 6px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 40px;
     border-radius: 50%;
     color: #777;
@@ -183,7 +191,7 @@ a {
     font-size: 12px;
 }
 
-.home{
+.home {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -192,8 +200,9 @@ a {
     z-index: 200;
     cursor: pointer;
 }
-.home a{
-    font-size: 20px; 
+
+.home a {
+    font-size: 20px;
     color: #999;
     line-height: 50px;
     display: block;
@@ -271,7 +280,7 @@ a {
 
 
 .list {
-    width:337px;
+    width: 337px;
     padding: 0 20px;
     height: 100%;
     overflow: hidden;
@@ -301,7 +310,6 @@ a {
     height: 30px;
     text-align: left;
     line-height: 30px;
-    font-size: 12px;
 }
 
 .list ul li a {
@@ -314,6 +322,7 @@ a {
     font-weight: 500;
     background: #fff;
     text-align: left;
+    font-size: 12px;
 }
 
 .list ul li a i {
@@ -321,12 +330,16 @@ a {
     margin-left: 15px;
     transition: 0.2s all linear;
 }
+.list ul li a i.iconfont {
+    font-size: 14px;
+}
 
 .list ul li:hover a {
     background: #02f;
     color: #fff;
 }
-.list ul li:hover a i{
+
+.list ul li:hover a i {
     color: #fff !important;
 }
 
@@ -346,6 +359,7 @@ a {
 .list ul li.title i {
     color: #02f;
     margin-right: 5px;
+    font-weight: normal;
 }
 
 #tp-weather-widget {
@@ -373,12 +387,15 @@ a {
     .con .sou form button {
         border-radius: 25px;
     }
+
     #menu.on {
         right: 270px;
     }
+
     .list {
         width: 227px;
     }
+
     .list ul {
         width: 220px;
     }
@@ -389,25 +406,53 @@ a {
         text-indent: 30px;
     }
 
-    .home,#menu {
+    .home,
+    #menu {
         top: 10px;
     }
 
     #tp-weather-widget {
-        left:20px;
+        left: 20px;
         top: 18px;
     }
-    #tp-weather-widget.hidden{display: none;}
+
+    #tp-weather-widget.hidden {
+        display: none;
+    }
 
 }
 
-@media (max-height: 360px) {
+@media (max-height: 420px) {
     .con {
         margin: 0;
         top: 0px;
     }
 
-    .home,#menu,#tp-weather-widget,.foot {
+    .con .sou form .wd {
+        text-indent: 50px;
+    }
+
+    .con .sou form:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        background: url(icon/lg.svg) no-repeat center/cover;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .con .shlogo {
+        display: none;
+    }
+
+    .home,
+    #menu,
+    #tp-weather-widget,
+    .foot {
         display: none;
     }
 }
