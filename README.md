@@ -12,6 +12,7 @@
 
 ### 图标：
 图标调用了阿里的图标，提供下本地包[点击下载](https://raw.githubusercontent.com/5iux/sou/master/icon.zip/)
+嫌麻烦的可以使用js版本示例里面的`font-awesome`
 
 ### 天气组件
 大家可以去[心知天气](https://www.seniverse.com/widget/)注册个插件加上，用法很简单
