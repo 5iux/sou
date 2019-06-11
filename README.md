@@ -5,7 +5,7 @@
 
 ## 实例页面：
 ### php版本
-[https://sou.yyv.me/](https://sou.yyv.me/) 
+[https://5iux.cn/](https://5iux.cn/) 
 ### 静态js版本:
 [https://5iux.github.io/](https://5iux.github.io/) 
 
