@@ -5,7 +5,7 @@
 
 ## 实例页面：
 ### php版本
-* 未知原因网站炸了,请访问js版本吧↓↓↓
+* 未知原因网站炸了,暂不提供了
 ### 静态js版本:
 [https://5iux.github.io/](https://5iux.github.io/) 
 
