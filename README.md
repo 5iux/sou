@@ -5,7 +5,7 @@
 
 ## 实例页面：
 ### php版本
-[https://5iux.cn/](https://5iux.cn/) 
+*未知原因网站炸了,请访问js版本吧↓↓↓
 ### 静态js版本:
 [https://5iux.github.io/](https://5iux.github.io/) 
 
