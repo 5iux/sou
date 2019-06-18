@@ -10,8 +10,8 @@ if ($q==""||$q==null) {
   }else if($t=="g"){
       echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }else{
-  		//默认百度
-  		echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
+  		echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
+  	
   }
 };
 ?>
@@ -34,33 +34,22 @@ if ($q==""||$q==null) {
   <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
   <title>简单搜索</title>
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
-  <!--link href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.8.0/css/all.min.css" rel="stylesheet"-->
   <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1230786_5c6v11cexdb.css">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2530a31105f02a18bdca86cb33da26ec";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1230786_ku11bmsaw1j.css">
 </head>
 
 <body>
     <div id="menu"><i></i></div>
-    <!--div class="home"><a href="https://yyv.me/"><i class="fas fa-home"></i></a></div-->
     <div class="list closed">
         <ul>
           <!------>
             <li class="title"><i class="iconfont icon-youxiang"></i> 邮箱</li>
             <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="iconfont icon-gmail" style="color: #f03;"></i>Gmail</a></li>
             <li><a rel="nofollow" href="https://outlook.live.com/mail/" target="_blank"><i class="iconfont icon-windows" style="color: #059;"></i>Hotmail</a></li>
-            <li><a rel="nofollow" href="https://mail.163.com/" target="_blank"><i class="iconfont icon-icon-test" style="color: #169;"></i>163邮箱</a></li>
-            <li><a rel="nofollow" href="https://www.126.com/" target="_blank"><i class="iconfont icon-icon-test1" style="color: #173;"></i>126邮箱</a></li>
+            <li><a rel="nofollow" href="https://mail.163.com/" target="_blank"><i class="iconfont icon-wangyi" style="color: #169;"></i>网易邮箱</a></li>
+            <li><a rel="nofollow" href="https://mail.sina.com.cn/" target="_blank"><i class="iconfont icon-xinlang" style="color: #e6162d;"></i>新浪邮箱</a></li>
             <li><a rel="nofollow" href="https://mail.qq.com/" target="_blank"><i class="iconfont icon-QQ" style="color: #f05;"></i>QQ邮箱</a></li>
+            <li><a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank"><i class="iconfont icon-yunyouxiang" style="color: #f15534;"></i>阿里邮箱</a></li>
           <!------>
             <li class="title"><i class="iconfont icon-msg"></i> 社交</li>
             <li><a rel="nofollow" href="https://www.weibo.com" target="_blank"><i class="iconfont icon-weibo" style="color: #e6162d;"></i>微博</a></li>
@@ -90,7 +79,8 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="http://www.zmz2019.com/" target="_blank"><i class="iconfont icon-zimu" style="color: #067;"></i>字幕组</a></li>
             <li><a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank"><i class="iconfont icon-acfun" style="color:#f33;"></i>ACFUN</a></li>
             <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><i class="iconfont icon-bili" style="color:#09e;"></i>哔哩哔哩</a></li>
-            <li><a rel="nofollow" href="https://sou.yyv.me/tv/" target="_blank"><i class="iconfont icon-dianshi" style="color:#9ae;"></i>直播电视</a></li>
+            <li><a rel="nofollow" href="https://www.yunbtv.com/" target="_blank"><i class="iconfont icon-yunbo" style="color:#0bf;"></i>云播影视</a></li>
+            <li><a rel="nofollow" href="/tv/" target="_blank"><i class="iconfont icon-dianshi" style="color:#9ae;"></i>直播电视</a></li>
             <li><a rel="nofollow" href="https://music.yyv.me/" target="_blank"><i class="iconfont icon-yinle" style="color:#f4a;"></i>音乐解析</a></li>
           <!------>
             <li class="title"><i class="iconfont icon-sheji"></i> 设计视觉</li>
@@ -109,13 +99,15 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="https://gugeji.com/" target="_blank"><i class="iconfont icon-google" style="color:#4285f4"></i>镜像</a></li>
             <li><a rel="nofollow" href="https://feedly.com" target="_blank"><i class="iconfont icon-feedly" style="color: #11dd00;"></i>Feedly</a></li>         
             <li><a rel="nofollow" href="https://pan.baidu.com" target="_blank"><i class="iconfont icon-baiduyun" style="color: #148bfe;"></i>百度网盘</a></li>
+            <li><a rel="nofollow" href="https://www.baiduwp.com" target="_blank"><i class="iconfont icon-cloud-download" style="color: #148bfe;"></i>盘在线解析</a></li>
             <li><a rel="nofollow" href="https://www.mdeditor.com/" target="_blank"><i class="iconfont icon-md" style="color:#09f;"></i>MD编辑器</a></li>
             <li><a rel="nofollow" href="https://miku.tools/" target="_blank"><i class="iconfont icon-ai-tool"></i>Miku工具</a></li>
             <li><a rel="nofollow" href="http://cubic-bezier.com" target="_blank"><i class="iconfont icon-quxian" style="color: #f08;"></i>贝赛尔曲线</a></li>
-            <li><a rel="nofollow" href="https://5iux.cn/base64" target="_blank"><i class="iconfont icon-base64" style="color:#1d0;"></i>Base64</a></li>
+            <li><a rel="nofollow" href="/base64/" target="_blank"><i class="iconfont icon-base64" style="color:#1d0;"></i>Base64</a></li>
             <li><a rel="nofollow" href="https://javascriptobfuscator.com/Javascript-Obfuscator.aspx" target="_blank"><i class="iconfont icon-jshunxiao" style="color: #48c;"></i>JS混淆器</a></li>
             <li><a rel="nofollow" href="https://ping.pe" target="_blank"><i class="iconfont icon-wangluo1" style="color:#1d0;"></i>Ping.pe</a></li>
             <li><a rel="nofollow" href="https://ping.chinaz.com/" target="_blank"><i class="iconfont icon-pingup" style="color:#2361ad;"></i>站长Ping</a></li>
+            <li><a rel="nofollow" href="https://apkdl.in/" target="_blank"><i class="iconfont icon-anzhuo" style="color:#094;"></i>APK下载</a></li>
             <!------>
             <li class="title"><i class="iconfont icon-kongzhitai"></i> 开发</li>
             <li><a rel="nofollow" href="http://www.w3school.com.cn/" target="_blank"><i class="iconfont icon-h5" style="color:#c03;"></i>W3school</a></li>
@@ -123,7 +115,6 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="https://codepen.io/" target="_blank"><i class="iconfont icon-codepen"></i>Codepen</a></li>
             <li><a rel="nofollow" href="https://www.52pojie.cn/" target="_blank"><i class="iconfont icon-theater-masks" style="color:#f03;"></i>吾爱破解</a></li>
             <li><a rel="nofollow" href="https://segmentfault.com/" target="_blank"><i class="iconfont icon-msg" style="color:#096;"></i>SF思否</a></li>
-            <li><a rel="nofollow" href="http://web.jobbole.com/" target="_blank"><i class="iconfont icon-bolezaixian" style="color: #09c;"></i>伯乐在线</a></li>
             <li><a rel="nofollow" href="https://cdnjs.com/" target="_blank"><i class="iconfont icon-cdnjs" style="color: #e52;"></i>CdnJs</a></li>
             <li><a rel="nofollow" href="https://fontawesome.com/icons?d=gallery&m=free" target="_blank"><i class="iconfont icon-font-awesome" style="color: #4af;"></i>Font A.</a></li>
             <li><a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank"><i class="iconfont icon-windows" style="color: #48c;"></i>MSDN下载</a></li>
@@ -131,7 +122,7 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><i class="iconfont icon-S" style="color:#065fe3;"></i>Swiper</a></li>
         </ul>
     </div>
-    <div id="tp-weather-widget" class="mywth"></div>
+    <div class="mywth"><iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ta&skin=orange&fontsize=13" frameborder="0" width="260" height="24" allowtransparency="true"></iframe></div>
     <div id="content">
         <div class="con">
             <div class="shlogo"></div>
@@ -179,49 +170,25 @@ var _hmt = _hmt || [];
             $("#menu").click(function(event) {
                 $(this).toggleClass('on');
                 $(".list").toggleClass('closed');
-                $("#tp-weather-widget").toggleClass('hidden');
+                $(".mywth").toggleClass('hidden');
             });
             $("#content").click(function(event) {
                 $(".on").removeClass('on');
                 $(".list").addClass('closed');
-                $("#tp-weather-widget").removeClass('hidden');
+                $(".mywth").removeClass('hidden');
             });
             /*
-               为界面干净无广告，移除天气插件版权信息
-               天气插件版权备注到这里：心知天气版权所有；
-               需要请到：https://www.seniverse.com/widget/  
-            */
-            $("#tp-weather-widget").mouseover(function(event) {
-                $("span:contains('心知天气')").parent().remove();
-            });
-            $(".mywth").click(function(event) {
+            $("iframe").click(function(event) {
               var wt=$("body").width();
               if(wt>640){
                 window.location.href="https://tianqi.qq.com/";
               }else{
-                window.location.href="https://apip.weatherdt.com/h5.html?id=JrCSiXLssE";
+                window.location.href="https://apip.weatherdt.com/h5.html?id=zehTqHpWFP";
               }
-            });
+            });*/
         });
         </script>
 
-<!--天气插件开始-->
-<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
-<script>tpwidget("init", {
-    "flavor": "slim",
-    "location": "WWE0TGW4PX6N",
-    "geolocation": "enabled",
-    "language": "zh-chs",
-    "unit": "c",
-    "theme": "chameleon",
-    "container": "tp-weather-widget",
-    "bubble": "enabled",
-    "alarmType": "badge",
-    "uid": "UFFFC70B02",
-    "hash": "8ca5fdc919e446872f170fb32648c78c"
-});
-tpwidget("show");</script>
-<!--天气插件结束-->
 
         <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
     </div>
@@ -229,7 +196,7 @@ tpwidget("show");</script>
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-06-11
+日期：2019-06-18
 版权所有，请勿删除
 -->
 </body>

@@ -2,7 +2,7 @@
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-06-11
+日期：2019-06-18
 版权所有，请勿删除
 */
 
@@ -216,7 +216,7 @@ a {
     transform: scale(0.8);
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 5px;
     z-index: 2000000;
     cursor: pointer;
     transition: 0.5s;
@@ -362,7 +362,7 @@ a {
     font-weight: normal;
 }
 
-#tp-weather-widget {
+.mywth{
     position: absolute;
     left: 20px;
     top: 20px;
