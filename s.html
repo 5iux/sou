@@ -86,7 +86,7 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="https://dash.cloudflare.com/" target="_blank"><i class="fas fa-cloud" style="color: #f37f20;"></i>C. flare</a></li>
         </ul>
     </div>
-    <div id="tp-weather-widget" class="mywth"></div>
+    <div class="mywth"></div>
     <div id="content">
         <div class="con">
             <div class="shlogo"></div>
@@ -135,29 +135,14 @@ var _hmt = _hmt || [];
             $("#menu").click(function(event) {
                 $(this).toggleClass('on');
                 $(".list").toggleClass('closed');
-                $("#tp-weather-widget").toggleClass('hidden');
+                $(".mywth").toggleClass('hidden');
             });
             $("#content").click(function(event) {
                 $(".on").removeClass('on');
                 $(".list").addClass('closed');
-                $("#tp-weather-widget").removeClass('hidden');
+                $(".mywth").removeClass('hidden');
             });
             /*
-               为界面干净无广告，移除天气插件版权信息
-               天气插件版权备注到这里：心知天气版权所有；
-               需要请到：https://www.seniverse.com/widget/  
-            */
-            $("#tp-weather-widget").mouseover(function(event) {
-                $("span:contains('心知天气')").parent().remove();
-            });
-            $(".mywth").click(function(event) {
-              var wt=$("body").width();
-              if(wt>640){
-                window.location.href="https://tianqi.qq.com/";
-              }else{
-                window.location.href="https://apip.weatherdt.com/h5.html?id=JrCSiXLssE";
-              }
-            });
         });
         </script>
 
@@ -181,5 +166,13 @@ tpwidget("show");</script>
 
         <div class="foot">© 2016-2019 by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
     </div>
+<!--
+作者:D.Young
+主页：https://yyv.me/
+github：https://github.com/5iux/sou
+日期：2019-06-11
+版权所有，请勿删除
+-->
+
 </body>
 </html>
