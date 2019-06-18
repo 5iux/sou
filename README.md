@@ -15,7 +15,7 @@
 嫌麻烦的可以使用js版本示例里面的`font-awesome`
 
 ### 天气组件
-大家可以去[心知天气](https://www.seniverse.com/widget/)注册个插件加上，用法很简单
+天气更换为[天气API](https://tianqiapi.com/)
 
 有php空间的可以自己上传试试，或者使用js版本也可以`s.html`。
 
