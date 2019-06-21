@@ -2,7 +2,7 @@
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-06-18
+日期：2019-06-11
 版权所有，请勿删除
 */
 
@@ -163,7 +163,8 @@ a {
 }
 
 .con .sou ul li:active {
-    background: #ddd;
+    background: #fff;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
 }
 
 .con .sou ul li i {
@@ -254,8 +255,9 @@ a {
 
 #menu.on {
     right: 370px;
-    background: #eee;
+    /*background: #fff;*/
     border-radius: 25px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
 }
 
 #menu.on i {
