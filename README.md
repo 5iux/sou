@@ -9,6 +9,10 @@
 ### 静态js版本:
 [https://5iux.github.io/](https://5iux.github.io/) 
 
+### IP测试页面
+新增ip测试工具
+[https://5iux.github.io/ip/](https://5iux.github.io/ip/)
+
 
 ### 图标：
 图标调用了阿里的图标，提供下本地包[点击下载](https://raw.githubusercontent.com/5iux/sou/master/icon.zip/)
