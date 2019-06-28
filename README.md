@@ -19,7 +19,10 @@
 嫌麻烦的可以使用js版本示例里面的`font-awesome`
 
 ### 天气组件
-天气更换为[天气API](https://tianqiapi.com/)
+
+默认[心知天气](https://www.seniverse.com/)
+
+天气可以更换为[天气API](https://tianqiapi.com/)
 
 有php空间的可以自己上传试试，或者使用js版本也可以`s.html`。
 
