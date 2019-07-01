@@ -37,15 +37,6 @@ if ($q==""||$q==null) {
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
   <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1230786_8056l7kbz5a.css">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2530a31105f02a18bdca86cb33da26ec";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 </head>
 
 <body>
@@ -77,7 +68,7 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="http://www.zmz2019.com/" target="_blank"><i class="iconfont icon-zimu" style="color: #067;"></i>字幕组</a></li>
             <li><a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank"><i class="iconfont icon-acfun" style="color:#f33;"></i>ACFUN</a></li>
             <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><i class="iconfont icon-bili" style="color:#09e;"></i>哔哩哔哩</a></li>
-            <li><a rel="nofollow" href="https://www.yunbtv.com/" target="_blank"><i class="iconfont icon-yunbo" style="color:#0bf;"></i>云播影视</a></li>
+            <li><a rel="nofollow" href="/movies/" target="_blank"><i class="iconfont icon-yunbo" style="color:#0bf;"></i>影视搜索</a></li>
             <li><a rel="nofollow" href="/tv/" target="_blank"><i class="iconfont icon-dianshi" style="color:#9ae;"></i>直播电视</a></li>
             <li><a rel="nofollow" href="https://music.yyv.me/" target="_blank"><i class="iconfont icon-yinle" style="color:#f4a;"></i>音乐解析</a></li>
           <!------>
@@ -198,7 +189,7 @@ var _hmt = _hmt || [];
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-07-11
+日期：2019-06-11
 版权所有，请勿删除
 -->
 </body>
