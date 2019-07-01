@@ -20,9 +20,7 @@
 
 ### 天气组件
 
-默认[心知天气](https://www.seniverse.com/)
-
-天气可以更换为[天气API](https://tianqiapi.com/)
+[天气API](https://tianqiapi.com/)
 
 有php空间的可以自己上传试试，或者使用js版本也可以`s.html`。
 
