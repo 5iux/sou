@@ -5,7 +5,7 @@
 
 ## 实例页面：
 ### php版本
-* 由于没备案,域名被腾讯云拦截了（不知为啥似乎https也不行了），暂不提供了；需要的话大家访问js版吧
+[https://5iux.cn/](https://5iux.cn/) 
 ### 静态js版本:
 [https://5iux.github.io/](https://5iux.github.io/) 
 
