@@ -367,7 +367,7 @@ a {
 .mywth{
     position: absolute;
     left: 20px;
-    top: 20px;
+    top: 25px;
 }
 
 @media (max-width: 640px) {
@@ -413,12 +413,11 @@ a {
         top: 10px;
     }
 
-    #tp-weather-widget {
+    .mywth {
         left: 20px;
-        top: 18px;
     }
 
-    #tp-weather-widget.hidden {
+    .mywth.hidden {
         display: none;
     }
 
@@ -453,7 +452,7 @@ a {
 
     .home,
     #menu,
-    #tp-weather-widget,
+    .mywth,
     .foot {
         display: none;
     }

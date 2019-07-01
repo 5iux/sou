@@ -3,7 +3,6 @@
 error_reporting(0);
 $t=htmlspecialchars($_POST["t"]);
 $q=htmlspecialchars($_POST["q"]);
-$v=htmlspecialchars($_GET["v"]);
 if ($q==""||$q==null) {
 }else{
   if ($t=="b"){
@@ -11,7 +10,7 @@ if ($q==""||$q==null) {
   }else if($t=="g"){
     echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }else{
-    //默认谷歌,切换百度可以注释掉下面的google，换成下面的百度
+    //默认谷歌
  		echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
     //echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
   }
@@ -79,6 +78,7 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank"><i class="iconfont icon-acfun" style="color:#f33;"></i>ACFUN</a></li>
             <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><i class="iconfont icon-bili" style="color:#09e;"></i>哔哩哔哩</a></li>
             <li><a rel="nofollow" href="https://www.yunbtv.com/" target="_blank"><i class="iconfont icon-yunbo" style="color:#0bf;"></i>云播影视</a></li>
+            <li><a rel="nofollow" href="/tv/" target="_blank"><i class="iconfont icon-dianshi" style="color:#9ae;"></i>直播电视</a></li>
             <li><a rel="nofollow" href="https://music.yyv.me/" target="_blank"><i class="iconfont icon-yinle" style="color:#f4a;"></i>音乐解析</a></li>
           <!------>
             <li class="title"><i class="iconfont icon-gouwuche"></i> 购物</li>
@@ -134,7 +134,7 @@ var _hmt = _hmt || [];
             <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><i class="iconfont icon-S" style="color:#065fe3;"></i>Swiper</a></li>
         </ul>
     </div>
-    <div id="tp-weather-widget" class="mywth"></div>
+    <div class="mywth"><iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=orange&fontsize=12" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe></div>
     <div id="content">
         <div class="con">
             <div class="shlogo"></div>
@@ -182,51 +182,15 @@ var _hmt = _hmt || [];
             $("#menu").click(function(event) {
                 $(this).toggleClass('on');
                 $(".list").toggleClass('closed');
-                $("#tp-weather-widget").toggleClass('hidden');
+                $(".mywth").toggleClass('hidden');
             });
             $("#content").click(function(event) {
                 $(".on").removeClass('on');
                 $(".list").addClass('closed');
-                $("#tp-weather-widget").removeClass('hidden');
-            });
-            /*
-               为界面干净无广告，移除天气插件版权信息
-               天气插件版权备注到这里：心知天气版权所有；
-               需要请到：https://www.seniverse.com/widget/  
-            */
-            $("#tp-weather-widget").mouseover(function(event) {
-                $("span:contains('心知天气')").parent().remove();
-            });
-            $(".mywth").click(function(event) {
-              var wt=$("body").width();
-              if(wt>640){
-                window.location.href="https://tianqi.qq.com/";
-              }else{
-                window.location.href="https://apip.weatherdt.com/h5.html?id=JrCSiXLssE";
-              }
+                $(".mywth").removeClass('hidden');
             });
         });
         </script>
-
-<!--天气插件开始-->
-<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
-<script>tpwidget("init", {
-    "flavor": "slim",
-    "location": "WWE0TGW4PX6N",
-    "geolocation": "enabled",
-    "language": "zh-chs",
-    "unit": "c",
-    "theme": "chameleon",
-    "container": "tp-weather-widget",
-    "bubble": "enabled",
-    "alarmType": "badge",
-    "uid": "UFFFC70B02",
-    "hash": "8ca5fdc919e446872f170fb32648c78c"
-});
-tpwidget("show");</script>
-<!--天气插件结束-->
-
-
 
         <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
     </div>
@@ -234,7 +198,7 @@ tpwidget("show");</script>
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-06-11
+日期：2019-07-11
 版权所有，请勿删除
 -->
 </body>
