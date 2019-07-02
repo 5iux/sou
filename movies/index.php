@@ -39,9 +39,9 @@ $type=htmlspecialchars($_GET["type"]);
 
 <div id="content">
 	<div class="search">
-       <form action="https://www.yunbtv.com/vodsearch/-------------.html" method="GET">
-       	<input type="text" name="wd" id="wd" placeholder="搜影片、剧集、综艺、动画等" value="">
-       	<input type="submit" value="搜索" id="submit">
+       <form action="https://www.nfmovies.com/search.php" method="GET">
+        <input type="text" name="searchword" id="wd" placeholder="搜影片、剧集、综艺、动画等" value="">
+        <input type="submit" value="搜索" id="submit">
        </form>
     </div>
     <div class="bd">
@@ -89,7 +89,7 @@ if($type=="hscore"){
 $content = json_decode($content);
     foreach ( $content->subjects as $subjects ) {
     echo '		<li>
-    		    <a href="https://www.yunbtv.com/vodsearch/-------------.html?wd='.$subjects->title.'">
+    		    <a href="https://www.nfmovies.com/search.php?searchword='.$subjects->title.'">
     		        <img class="lazy" src="../movies/img/load.gif" data-original="'.$subjects->cover.'" width="120" height="176">
     		        <em>豆瓣评分：<b>'.$subjects->rate.'</b></em>
                     <span>'.$subjects->title.'</span>
@@ -113,8 +113,8 @@ $content = json_decode($content);
         <div id="more"><a href="https://v.dagu.ml/">更多影视 >></a></div>
     </div>
     <div class="search" style="margin-bottom: 20px;">
-       <form action="https://www.yunbtv.com/vodsearch/-------------.html" method="GET">
-        <input type="text" name="wd" id="wd" placeholder="搜影片、剧集、综艺、动画等" value="">
+       <form action="https://www.nfmovies.com/search.php" method="GET">
+        <input type="text" name="searchword" id="wd" placeholder="搜影片、剧集、综艺、动画等" value="">
         <input type="submit" value="搜索" id="submit">
        </form>
     </div>
