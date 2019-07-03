@@ -61,11 +61,13 @@
     li span:nth-child(1){ border-right: 1px solid #ddd; width: calc(30% - 1px);}
     span a{display: block; width: 90px; height: 30px; font-size: 14px; line-height: 30px; border: 1px solid #ddd; border-radius: 15px; color: #000; cursor:pointer; overflow: hidden; margin: 15px auto 0; text-decoration: none;}
     span a:active{ border-color: #fff; box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1) }
+    .flag{ display: inline-block;height: 12px; }
     </style>
 <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
  $(document).ready(function() {
     $.ajax({
+        //太平洋IP接口
         url: 'https://whois.pconline.com.cn/ipJson.jsp',
         dataType: 'jsonp',
         timeout: 5000,
@@ -79,11 +81,15 @@
         },
     });
     $.ajax({
-        url: "https://ipapi.co/jsonp",
+        //ipapi.co ip接口
+        //url: "https://ipapi.co/jsonp",
+        //geojs ip接口
+        //url: "https://get.geojs.io/v1/ip/geo.js",
+        url:"https://api.ipdata.co/?api-key=test",
         dataType: "jsonp",
         timeout: 5000,
         success: function(resp) {
-            $("#guowai").html(resp.ip+"&nbsp;"+resp.country);
+            $("#guowai").html(resp.ip+"&nbsp;<img class='flag' src='"+resp.flag+"'>&nbsp;"+resp.country_name);
         },
         error: function() {
             $("#guowai").html("不支持");
@@ -92,11 +98,12 @@
         },
     });
     $.ajax({
+        //lightssockscom ip接口
         url: "https://lightssockscom.appspot.com",
         dataType: "jsonp",
         timeout: 5000,
         success: function(resp) {
-            $("#wall").html(resp.address+"&nbsp;"+resp.geographical);
+            $("#wall").html(resp.address+"&nbsp;"+resp.flag+"&nbsp;"+resp.geographical);
         },
         error: function() {
             $("#wall").html("不支持");
@@ -104,7 +111,6 @@
         complete: function(){
         },
     });
-
  });
 </script>
 
@@ -139,7 +145,7 @@
                 <a href="https://fast.com" target="_self">Fast</a>
               </span>
               <span style="border: none; width: 33%;">
-                <a href="/ip" target="_self">刷新</a>
+                <a href="/ip/" target="_self">刷新</a>
               </span>
             </li>
     </ul>
