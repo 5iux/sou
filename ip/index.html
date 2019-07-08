@@ -83,9 +83,8 @@
     $.ajax({
         //ipapi.co ip接口
         //url: "https://ipapi.co/jsonp",
-        //geojs ip接口
-        //url: "https://get.geojs.io/v1/ip/geo.js",
-        url:"https://api.ipdata.co/?api-key=test",
+        //ipdata ip接口
+        url:"https://api.ipdata.co/zh-CN?api-key=e2ad49b8d868818611d0daca300b9f5696b9c58ead0d22eb85e17d10",
         dataType: "jsonp",
         timeout: 5000,
         success: function(resp) {
@@ -123,17 +122,17 @@
                 <span width="40%">检测结果</span>
             </li>
             <li>
-                <span>国内网站</span>
+                <span>大陆</span>
                 <span id="guonei">
                 </span>
             </li>
             <li>
-                <span>国外网站 </span>
+                <span>非大陆</span>
                 <span id="guowai">
                 </span>
             </li>
             <li>
-                <span>特殊网站</span>
+                <span>谷歌</span>
                 <span id="wall">
                 </span>
             </li>
