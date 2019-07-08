@@ -69,8 +69,8 @@
     $.ajax({
         //太平洋IP接口
         //url: 'https://whois.pconline.com.cn/ipJson.jsp',
-        //ipdata ip接口
-        url:"https://api.ipdata.co/<?php echo $_SERVER["REMOTE_ADDR"];?>/zh-CN?api-key=e2ad49b8d868818611d0daca300b9f5696b9c58ead0d22eb85e17d10",
+        //ipdata ip接口  api-key请到ipdata.co申请
+        url:"https://api.ipdata.co/<?php echo $_SERVER["REMOTE_ADDR"];?>/zh-CN?api-key=test",
         dataType: "jsonp",
         timeout: 5000,
         success: function(resp) {
@@ -86,8 +86,8 @@
     $.ajax({
         //ipapi.co ip接口
         //url: "https://ipapi.co/jsonp",
-        //ipdata ip接口
-        url:"https://api.ipdata.co/zh-CN?api-key=e2ad49b8d868818611d0daca300b9f5696b9c58ead0d22eb85e17d10",
+        //ipdata ip接口 api-key请到ipdata.co申请
+        url:"https://api.ipdata.co/zh-CN?api-key=test",
         dataType: "jsonp",
         timeout: 5000,
         success: function(resp) {
