@@ -368,7 +368,11 @@ a {
     position: absolute;
     left: 20px;
     top: 25px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
 }
+.wea{display: inline-block; height: 14px;}
 
 @media (max-width: 640px) {
     .con {
@@ -411,10 +415,6 @@ a {
     .home,
     #menu {
         top: 10px;
-    }
-
-    .mywth {
-        left: 20px;
     }
 
     .mywth.hidden {

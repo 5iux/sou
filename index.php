@@ -36,7 +36,7 @@ if ($q==""||$q==null) {
   <title>简单搜索</title>
   <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
   <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_1230786_8056l7kbz5a.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1230786_gdvd1b4wlz.css">
 </head>
 
 <body>
@@ -82,7 +82,7 @@ if ($q==""||$q==null) {
             <li><a rel="nofollow" href="http://you.163.com/" target="_blank"><i class="iconfont icon-yanxuan" style="color: #B4A078;"></i>网易严选</a></li>
             <li><a rel="nofollow" href="https://www.amazon.cn/" target="_blank"><i class="iconfont icon-amazon" style="color: #fc9b18;"></i>亚马逊</a></li>
             <li><a rel="nofollow" href="http://www.dangdang.com/" target="_blank"><i class="iconfont icon-dangdang" style="color: #ff2832;"></i>当当</a></li>
-            <li><a rel="nofollow" href="https://dyartstyle.com/shop/" target="_blank"><i class="iconfont icon-youhuiquan" style="color: #f03;"></i>吾爱淘</a></li>
+            <li><a rel="nofollow" href="https://wat.dyartstyle.com/" target="_blank"><i class="iconfont icon-wat" style="color: #fe2e52;"></i>吾爱淘</a></li>
           <!------>
             <li class="title"><i class="iconfont icon-sheji"></i> 设计视觉</li>
             <li><a rel="nofollow" href="https://web.yyv.me/" target="_blank"><i class="iconfont icon-daohang1"></i>设计导航</a></li>
@@ -96,7 +96,7 @@ if ($q==""||$q==null) {
             <li><a rel="nofollow" href="https://uiiiuiii.com/" target="_blank"><i class="iconfont icon-jiaocheng" style="color:#0aa;"></i>优设教程</a></li>
             <!------>
             <li class="title"><i class="iconfont icon-ai-tool"></i> 工具</li>
-            <li><a rel="nofollow" href="https://5iux.github.io/ip/" target="_blank"><i class="iconfont icon-wangluo" style="color: #02f;"></i>IP查询</a></li>
+            <li><a rel="nofollow" href="/ip/" target="_blank"><i class="iconfont icon-wangluo" style="color: #02f;"></i>IP查询</a></li>
             <li><a rel="nofollow" href="https://translate.google.cn/?hl=zh-CN" target="_blank"><i class="iconfont icon-fanyi" style="color: #02f;"></i>谷歌翻译</a></li>
             <li><a rel="nofollow" href="http://www.slimego.cn/" target="_blank"><i class="iconfont icon-shilaimu" style="color: #0f89c2;"></i>史莱姆</a></li>
             <li><a rel="nofollow" href="https://gugeji.com/" target="_blank"><i class="iconfont icon-google" style="color:#4285f4"></i>镜像</a></li>
@@ -125,7 +125,7 @@ if ($q==""||$q==null) {
             <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><i class="iconfont icon-S" style="color:#065fe3;"></i>Swiper</a></li>
         </ul>
     </div>
-    <div class="mywth"><iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=orange&fontsize=12" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe></div>
+    <div class="mywth"></div>    
     <div id="content">
         <div class="con">
             <div class="shlogo"></div>
@@ -180,9 +180,26 @@ if ($q==""||$q==null) {
                 $(".list").addClass('closed');
                 $(".mywth").removeClass('hidden');
             });
+            $(".mywth").click(function(event) {
+                window.location.href="https://tianqi.qq.com/";
+            });
         });
+        /*天气插件开始*/
+        $.ajax({
+            url: 'https://www.tianqiapi.com/api/',
+            data: 'version=v1&city=',
+            dataType: 'JSON',
+            error: function () {
+                console.log('天气插件网络错误！');
+            },
+            success: function (res) {
+                uptime = res.update_time.substring(11);
+                uptime = uptime.substring(0,uptime.length-3);
+                $('.mywth').append(res.city + ' <img class="wea" src="img/wea/'+res.data[0].wea_img+'.png"> ' + res.data[0].wea + ' ' + res.data[0].tem1 + '/' + res.data[0].tem2 + ' ' +  res.data[0].air_level);
+            }
+        });
+        /*天气插件结束*/
         </script>
-
         <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
     </div>
 <!--
