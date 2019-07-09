@@ -368,11 +368,11 @@ a {
     position: absolute;
     left: 20px;
     top: 25px;
-    font-size: 14px;
+    font-size: 12px;
     height: 20px;
     line-height: 20px;
 }
-.wea{display: inline-block; height: 14px;}
+.mywth .wea{display: inline-block; height: 18px;vertical-align:middle; padding-bottom: 3px;}
 
 @media (max-width: 640px) {
     .con {

@@ -195,7 +195,7 @@ if ($q==""||$q==null) {
             success: function (res) {
                 uptime = res.update_time.substring(11);
                 uptime = uptime.substring(0,uptime.length-3);
-                $('.mywth').append(res.city + ' <img class="wea" src="img/wea/'+res.data[0].wea_img+'.png"> ' + res.data[0].wea + ' ' + res.data[0].tem1 + '/' + res.data[0].tem2 + ' ' +  res.data[0].air_level);
+                $('.mywth').append(res.city + ' <img class="wea" src="https://tianqiapi.com/static/skin/durian/'+res.data[0].wea_img+'.png"> ' + res.data[0].wea + ' ' + res.data[0].tem1 + '/' + res.data[0].tem2 + ' ' +  res.data[0].air_level);
             }
         });
         /*天气插件结束*/
