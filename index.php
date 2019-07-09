@@ -187,7 +187,7 @@ if ($q==""||$q==null) {
         /*天气插件开始*/
         $.ajax({
             url: 'https://www.tianqiapi.com/api/',
-            data: 'version=v1&city=',
+            data: 'version=v1&ip=<?php echo $_SERVER["REMOTE_ADDR"];?>',
             dataType: 'JSON',
             error: function () {
                 console.log('天气插件网络错误！');
@@ -195,7 +195,7 @@ if ($q==""||$q==null) {
             success: function (res) {
                 uptime = res.update_time.substring(11);
                 uptime = uptime.substring(0,uptime.length-3);
-                $('.mywth').append(res.city + ' <img class="wea" src="https://tianqiapi.com/static/skin/durian/'+res.data[0].wea_img+'.png"> ' + res.data[0].wea + ' ' + res.data[0].tem1 + '/' + res.data[0].tem2 + ' ' +  res.data[0].air_level);
+                $('.mywth').append(res.city + ' <img class="wea" src="https://tianqiapi.com/static/skin/gif/'+res.data[0].wea_img+'.gif"> ' + res.data[0].wea + ' ' + res.data[0].tem1 + '/' + res.data[0].tem2 + ' ' +  res.data[0].air_level);
             }
         });
         /*天气插件结束*/
