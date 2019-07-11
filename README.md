@@ -26,7 +26,7 @@
 ## 组件：  
 
 ### 图标：
-图标调用了阿里的图标`https://www.iconfont.cn/`，提供下本地包[点击下载](https://raw.githubusercontent.com/5iux/sou/master/icon.zip/)  
+图标调用了阿里的图标`https://www.iconfont.cn/`，提供下本地包[点击下载](https://raw.githubusercontent.com/5iux/sou/master/icon.zip)  
 嫌麻烦的可以使用js版本示例里面的`font-awesome`  
 ### 天气组件  
 天气组件已经替换为`www.tianqiapi.com`接口，直接调json，应该不会失效了，参数大家可以到api页面更换调整：  
