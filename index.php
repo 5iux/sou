@@ -34,9 +34,10 @@ if ($q==""||$q==null) {
   <meta name="x5-fullscreen" content="true"><!--QQ强制全屏-->
   <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
   <title>简单搜索</title>
-  <?php echo'<link href="style.css?t='.date("ymdhi").'" rel="stylesheet">'  ?>
-  <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="style.css?t=<?php echo date("ymdhi"); ?>" rel="stylesheet">
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1230786_gdvd1b4wlz.css">
+  <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="sou.js?t=<?php echo date("ymdhi"); ?>"></script>
 </head>
 
 <body>
@@ -125,7 +126,18 @@ if ($q==""||$q==null) {
             <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><i class="iconfont icon-S" style="color:#065fe3;"></i>Swiper</a></li>
         </ul>
     </div>
-    <div class="mywth"></div>    
+    <div class="mywth">
+        <div class="wea_hover">
+            <div class="wea_in wea_top"></div>
+            <div class="wea_in wea_con">
+                <ul></ul>
+            </div>
+            <div class="wea_in wea_foot">
+                <ul></ul>
+            </div>
+        </div>
+        <!--天气插件，基于www.tianqiapi.com 天气接口制作-->
+    </div>    
     <div id="content">
         <div class="con">
             <div class="shlogo"></div>
@@ -141,72 +153,13 @@ if ($q==""||$q==null) {
                 </ul>
             </div>
         </div>
-        <script>
-        $(document).ready(function() {
-            //判断窗口大小，添加输入框自动完成
-            var wid = $("body").width();
-            if (wid < 640) {
-                $(".wd").attr('autocomplete', 'off');
-            }
-            //按钮
-            $(".sou li").click(function() {
-                var dt = $(this).attr('data-s');
-                wd = $(".wd").val();
-                if (dt == "google") {
-                    if (wd == "" || wd == null) {
-                        window.location.href = "https://www.google.com/?hl=zh";
-                    } else {
-                        $(".t").val("g");
-                        $("form").submit();
-                    }
-                } else {
-                    if (wd == "" || wd == null) {
-                        window.location.href = "https://www.baidu.com/?tn=simple";
-                    } else {
-                        $(".t").val("b");
-                        $("form").submit();
-                    }
-                }
-
-            });
-            //菜单点击
-            $("#menu").click(function(event) {
-                $(this).toggleClass('on');
-                $(".list").toggleClass('closed');
-                $(".mywth").toggleClass('hidden');
-            });
-            $("#content").click(function(event) {
-                $(".on").removeClass('on');
-                $(".list").addClass('closed');
-                $(".mywth").removeClass('hidden');
-            });
-            $(".mywth").click(function(event) {
-                window.location.href="https://tianqi.qq.com/";
-            });
-        });
-        /*天气插件开始*/
-        $.ajax({
-            url: 'https://www.tianqiapi.com/api/',
-            data: 'version=v1&ip=<?php echo $_SERVER["REMOTE_ADDR"];?>',
-            dataType: 'JSON',
-            error: function () {
-                console.log('天气插件网络错误！');
-            },
-            success: function (res) {
-                uptime = res.update_time.substring(11);
-                uptime = uptime.substring(0,uptime.length-3);
-                $('.mywth').append(res.city + ' <img class="wea" src="https://tianqiapi.com/static/skin/gif/'+res.data[0].wea_img+'.gif"> ' + res.data[0].wea + ' ' + res.data[0].tem1 + '/' + res.data[0].tem2 + ' ' +  res.data[0].air_level);
-            }
-        });
-        /*天气插件结束*/
-        </script>
         <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
     </div>
 <!--
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-06-11
+日期：2019-07-12
 版权所有，请勿删除
 -->
 </body>

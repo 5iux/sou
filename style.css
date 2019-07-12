@@ -1,8 +1,9 @@
+@charset "utf-8";
 /*
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-06-11
+日期：2019-07-11
 版权所有，请勿删除
 */
 
@@ -254,14 +255,15 @@ a {
 }
 
 #menu.on {
-    right: 370px;
-    /*background: #fff;*/
+    right: 380px;
+    background: #29f;
     border-radius: 25px;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 6px 8px rgba(36, 159, 253, .3);
 }
 
 #menu.on i {
     width: 20px;
+    background: #fff;
 }
 
 #menu.on i:before {
@@ -270,6 +272,7 @@ a {
     width: 14px;
     right: -1px;
     left: auto;
+    background: #fff;
 }
 
 #menu.on i:after {
@@ -278,6 +281,7 @@ a {
     width: 14px;
     right: -1px;
     left: auto;
+    background: #fff;
 }
 
 
@@ -288,7 +292,7 @@ a {
     overflow: hidden;
     overflow-y: auto;
     position: absolute;
-    right: -7px;
+    right: 0px;
     z-index: 2000;
     background: #f1f1f1;
     transition: 0.3s all linear;
@@ -332,12 +336,13 @@ a {
     margin-left: 15px;
     transition: 0.2s all linear;
 }
+
 .list ul li a i.iconfont {
     font-size: 14px;
 }
 
 .list ul li:hover a {
-    background: #02f;
+    background: #29f;
     color: #fff;
 }
 
@@ -359,20 +364,178 @@ a {
 }
 
 .list ul li.title i {
-    color: #02f;
+    color: #29f;
     margin-right: 5px;
     font-weight: normal;
 }
 
-.mywth{
+.mywth {
     position: absolute;
     left: 20px;
-    top: 25px;
+    top: 15px;
     font-size: 12px;
     height: 20px;
     line-height: 20px;
+    cursor: pointer;
 }
-.mywth .wea{display: inline-block; height: 18px;vertical-align:middle; padding-bottom: 3px;}
+
+.mywth .wea {
+    display: inline-block;
+    height: 18px;
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+
+.mywth .wea_hover {
+    width: 400px;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100000;
+    font-size: 12px;
+    line-height: 20px;
+    left: 0;
+    top: 30px;
+    box-shadow: 5px 5px 5px 0 rgba(33, 150, 243, 0.3);
+    border-radius: 15px;
+    /* background: #fff; */
+    background: linear-gradient(45deg, #549aff,#602fff);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.mywth:hover .wea_hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wea_in {
+    position: relative;
+    float: left;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+.wea_top span {
+    display: block;
+    float: left;
+    line-height: 20px;
+}
+
+.wea_top span.city {
+    width: 100%;
+    line-height: 30px;
+}
+
+.wea_top span.city b {
+    display: inline-block;
+    float: left;
+    background: #fd0;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 10px;
+    color: #18e;
+    margin-right: 5px;
+}
+
+.wea_top span.img {
+    width: 50px;
+    height: 120px;
+}
+
+.wea_top span.tem {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.wea_top span.tem b {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-weight: lighter;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.wea_top span.air {
+    height: 40px;
+    width: 120px;
+    margin-top: 40px;
+}
+
+.wea_con {
+    margin: 20px 10px;
+    position: relative;
+    float: left;
+}
+
+.wea_con ul {
+    width: 100%;
+}
+
+.wea_con ul li {
+    float: left;
+    width: calc(33% - 11px);
+    font-size: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-right: none;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.wea_con ul li b {
+    color: #fd0;
+}
+
+.wea_con ul li i {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+    display: block;
+    margin: 5px 0;
+}
+
+.wea_con ul li:last-child {
+    border-right: 1px solid #eee;
+}
+
+.wea_foot ul {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.wea_foot ul li {
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wea_foot ul li img {
+    display: inline-block;
+    vertical-align: center;
+    height: 30px;
+    margin: 5px;
+}
+
+.wea_foot ul li b {
+    color: #fd0;
+    font-weight: normal;
+}
+
+.wea_foot ul li i {
+    font-weight: normal;
+    font-style: normal;
+}
 
 @media (max-width: 640px) {
     .con {
@@ -414,9 +577,17 @@ a {
 
     .home,
     #menu {
-        top: 10px;
+        top: 5px;
     }
 
+    .mywth {
+        color: #777;
+        left: 10px;
+        top: 20px;
+    }
+    .mywth .wea_hover{
+        display: none;
+    }
     .mywth.hidden {
         display: none;
     }
@@ -470,12 +641,12 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #aaa;
+    background: #29f;
     border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #747474;
+    background: #18e;
 }
 
 ::-webkit-scrollbar-corner {
