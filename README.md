@@ -1,23 +1,27 @@
-# 简单搜索
-![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.gif)
-*（图片效果，以实际页面为准）  
+# 简单搜索  
 
 用惯了各种导航首页，满屏幕尽是各种不厌其烦的广告和资讯；尝试自己写个自己的主页。 
 
+![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.gif)
+*（图片效果，以实际页面为准）   
+
+## 最新界面：  
+![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.jpg)  
+
+
+
 ## 示例页面：    
  
-### php版本  
-[https://5iux.cn/](https://5iux.cn/)  
-### 静态js版本:  
-[https://5iux.github.io/](https://5iux.github.io/)  
++ php版本：[https://5iux.cn/](https://5iux.cn/)  
++ 静态js版本：[https://5iux.github.io/](https://5iux.github.io/)  
   
   
 ## 工具页面：  
 
 ### IP测试页面  
 新增ip测试工具  
-[https://5iux.github.io/ip/](https://5iux.github.io/ip/)   
-[https://5iux.cn/ip/](https://5iux.cn/ip/)   
++ [https://5iux.github.io/ip/](https://5iux.github.io/ip/)   
++ [https://5iux.cn/ip/](https://5iux.cn/ip/)   
 ### 影视搜索二级页  
 [https://5iux.cn/movies/](https://5iux.cn/movies/) 
 新增影视搜索二级页，列表接口直接调用的豆瓣api  
