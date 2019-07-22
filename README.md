@@ -5,8 +5,6 @@
 ![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.gif)
 *（图片效果，以实际页面为准）   
 
-## 最新界面：  
-![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.jpg)  
 
 
 
