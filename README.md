@@ -3,7 +3,7 @@
 用惯了各种导航首页，满屏幕尽是各种不厌其烦的广告和资讯；尝试自己写个自己的主页。 
 
 ![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img.gif)
-*（图片效果，以实际页面为准）   
+> （图片效果，以实际页面为准）   
 
 
 
