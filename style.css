@@ -548,19 +548,28 @@ a {
     .con .sou form .wd:focus {
         background: #f1f1f1;
         box-shadow: none;
-        border-color: #ccc
+        border-color: #ccc;
     }
     .con .sou form button {
         border-radius: 25px;
     }
     #menu.on {
-        right: 270px;
+        transform: scale(0.8) rotate(90deg);
+        right: 10px;
+        bottom: 50%;
     }
     .list {
-        width: 227px;
+        width: calc(100% - 40px);
+        height: 50%;
+        top: 50%;
+    }
+    .list.closed {
+        right: auto;
+        top: 100%;
     }
     .list ul {
-        width: 220px;
+        width: 100%;
+        margin-bottom: 0;
     }
     .con .sou ul li {
         width: 100px;
@@ -569,7 +578,8 @@ a {
     }
     .home,
     #menu {
-        top: 5px;
+        top: auto;
+        bottom: 30px;
     }
     .mywth {
         color: #777;
@@ -579,9 +589,9 @@ a {
     .mywth .wea_hover {
         display: none;
     }
-    .mywth.hidden {
+    /*.mywth.hidden {
         display: none;
-    }
+    }*/
 }
 
 @media (max-height: 420px) {
