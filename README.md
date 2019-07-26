@@ -11,7 +11,10 @@
 ## 示例页面：    
  
 + php版本：[https://5iux.cn/](https://5iux.cn/)  
+
+
 + 静态js版本：[https://5iux.github.io/](https://5iux.github.io/)  
+> 由于同步更新起来挺麻烦,我比较懒 orz :），js版本停更，使用请自行修改
   
   
 ## 工具页面：  
