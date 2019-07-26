@@ -397,8 +397,11 @@ a {
     top: 30px;
     box-shadow: 5px 5px 5px 0 rgba(33, 150, 243, 0.3);
     border-radius: 15px;
-    /* background: #fff; */
-    background: linear-gradient(45deg, #549aff,#602fff);
+    /* background: #fff; 
+    background: linear-gradient(45deg, #549aff,#602fff);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
     visibility: hidden;
     opacity: 0;
@@ -463,7 +466,7 @@ a {
 .wea_top span.air {
     height: 40px;
     width: 120px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .wea_con {
@@ -474,37 +477,42 @@ a {
 
 .wea_con ul {
     width: 100%;
+    margin-left: 1px;
 }
 
 .wea_con ul li {
     float: left;
-    width: calc(33% - 11px);
+    width: calc(25% - 12px);
     font-size: 12px;
     overflow: hidden;
     border: 1px solid #eee;
-    border-right: none;
     padding: 0 5px;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 25px;
     font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin: 0 -1px -1px 0;
 }
 
 .wea_con ul li b {
     color: #fd0;
+    font-size: 14px;
+}
+.wea_con ul li:hover {
+    background:rgba(255,255,255,0.3);
+    color: #000;
 }
 
 .wea_con ul li i {
+    display: none;
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
-    line-height: 18px;
-    display: block;
+    line-height: 16px;
     margin: 5px 0;
 }
 
-.wea_con ul li:last-child {
-    border-right: 1px solid #eee;
-}
 
 .wea_foot ul {
     position: relative;
@@ -514,7 +522,7 @@ a {
 
 .wea_foot ul li {
     float: left;
-    width: 25%;
+    width: 33.3%;
     overflow: hidden;
     text-align: center;
     font-weight: bold;

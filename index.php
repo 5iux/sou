@@ -11,7 +11,8 @@ if ($q==""||$q==null) {
     echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
   }else{
     //默认谷歌
- 		echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
+        echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
+    //可以改为百度
     //echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
   }
 };
@@ -159,7 +160,7 @@ if ($q==""||$q==null) {
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2019-07-12
+日期：2019-07-26
 版权所有，请勿删除
 -->
 </body>
