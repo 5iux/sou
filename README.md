@@ -5,9 +5,6 @@
 ###  GIF
 ![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img0726.gif)
 > （图片效果，以实际页面为准） 
-### Video
-[![Watch the video](https://raw.githubusercontent.com/5iux/sou/master/img.jpg)](https://raw.githubusercontent.com/5iux/sou/master/video.mp4)  
-
 
 
 
