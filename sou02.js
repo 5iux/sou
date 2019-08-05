@@ -83,7 +83,7 @@ $.ajax({
         $('.wea_foot ul').append('<li>' + res.data[1].day + '<br><img src="https://xuesax.com/tianqiapi/skin/peach/' + res.data[1].wea_img + '.png"><br><b>' + res.data[1].wea + '</b><br><i>' + res.data[1].tem1 + '°/' + res.data[1].tem2 + '°' + '</i></li>');
         $('.wea_foot ul').append('<li>' + res.data[2].day + '<br><img src="https://xuesax.com/tianqiapi/skin/peach/' + res.data[2].wea_img + '.png"><br><b>' + res.data[2].wea + '</b><br><i>' + res.data[2].tem1 + '°/' + res.data[2].tem2 + '°' + '</i></li>');
         $('.wea_foot ul').append('<li>' + res.data[3].day + '<br><img src="https://xuesax.com/tianqiapi/skin/peach/' + res.data[3].wea_img + '.png"><br><b>' + res.data[3].wea + '</b><br><i>' + res.data[3].tem1 + '°/' + res.data[3].tem2 + '°' + '</i></li>');
-        $('.wea_foot ul').append('<li>' + res.data[4].day + '<br><img src="https://xuesax.com/tianqiapi/skin/peach/' + res.data[4].wea_img + '.png"><br><b>' + res.data[4].wea + '</b><br><i>' + res.data[4].tem1 + '°/' + res.data[4].tem2 + '°' + '</i></li>');
     }
+
 });
 /*天气插件结束*/
