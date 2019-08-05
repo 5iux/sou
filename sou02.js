@@ -58,11 +58,11 @@ $(document).ready(function() {
 
 
 /*天气插件开始
-天气插件api请在wea目录中index.php修改
+天气插件api请在下方修改
 申请地址：和风天气-https://dev.heweather.com/
 */
 $.ajax({
-    url: '/wea/',
+    url: 'https://free-api.heweather.net/s6/weather/?location=auto_ip&key=000000',
     dataType: 'json',
     error: function() {
         console.log('天气插件网络错误！');
