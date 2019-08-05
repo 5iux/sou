@@ -63,7 +63,7 @@ $(document).ready(function() {
 */
 $.ajax({
     url: 'https://5iux.cn/wea/',
-    dataType: 'json',
+    dataType: 'jsonp',
     error: function() {
         console.log('天气插件网络错误！');
     },
