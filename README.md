@@ -21,7 +21,7 @@
 
 ### IP测试页面  
 新增ip测试工具  
-+ [https://5iux.github.io/ip/](https://5iux.github.io/ip/)   
++ [https://5iux.github.io/sou/ip/](https://5iux.github.io/sou/ip/)   
 
 
 ### 影视搜索二级页  
