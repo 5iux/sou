@@ -71,7 +71,7 @@ $.ajax({
     success: function(res) {
         uptime = res.update_time.substring(11);
         uptime = uptime.substring(0, uptime.length - 3);
-        $('.wea_hover').css('background-image', 'url(/wea/icon/bg/100d.png)');
+        $('.wea_hover').css('background-image', 'url(../..//wea/icon/bg/100d.png)');
         $('.mywth').append(res.city + ' <img class="wea" src="https://www.tianqiapi.com/static/skin/yahoo/' + res.data[0].wea_img + '.png"> ' + res.data[0].wea + ' ' + res.data[0].tem1 + '/' + res.data[0].tem2 + ' ' + res.data[0].air_level);
         //今日天气
         $('.wea_top').append('<span class="city"><b>' + res.city + '</b> ' + res.update_time + '更新</span><span class="img" style="background:url(https://www.tianqiapi.com/static/skin/yahoo/' + res.data[0].wea_img + '.png) no-repeat center/contain;"></span> <span class="tem"><b>' + res.data[0].tem + '</b>' + res.data[0].wea + '</span><span class="air">空气质量：' + res.data[0].air_level + '<br>湿度：' + res.data[0].humidity + '%<br>' + res.data[0].win[0] + '：' + res.data[0].win_speed + '</span><span class="air_tips">' + res.data[0].air_tips + '</span>');

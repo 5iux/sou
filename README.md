@@ -13,8 +13,8 @@
 + php版本：[https://5iux.cn/](https://5iux.cn/)  
 
 
-+ 静态js版本：[https://5iux.github.io/](https://5iux.github.io/)  
-> 由于同步更新起来挺麻烦,我比较懒 orz :），js版本停更，使用请自行修改
++ 静态js版本：[https://5iux.github.io/sou/home.html](https://5iux.github.io/sou/home.html)  
+> 临时更新下
   
   
 ## 工具页面：  
@@ -22,7 +22,8 @@
 ### IP测试页面  
 新增ip测试工具  
 + [https://5iux.github.io/ip/](https://5iux.github.io/ip/)   
-+ [https://5iux.cn/ip/](https://5iux.cn/ip/)   
+
+
 ### 影视搜索二级页  
 [https://5iux.cn/movies/](https://5iux.cn/movies/) 
 新增影视搜索二级页，列表接口直接调用的豆瓣api  
