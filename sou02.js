@@ -62,8 +62,8 @@ $(document).ready(function() {
 申请地址：和风天气-https://dev.heweather.com/
 */
 $.ajax({
-    url: 'https://5iux.cn/wea/',
-    dataType: 'jsonp',
+    url: 'https://5iux.cn/wea/?callback=res',
+    dataType: 'json',
     error: function() {
         console.log('天气插件网络错误！');
     },
