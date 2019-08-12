@@ -154,7 +154,7 @@ if ($q==""||$q==null) {
                 </ul>
             </div>
         </div>
-        <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
+        <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.  <a rel="nofollow" href="https://5iux.github.io/sou/" target="_blank" style="font-size: 12px;"><i class="iconfont icon-github"></i></a></div>
     </div>
 <!--
 作者:D.Young
