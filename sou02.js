@@ -11,6 +11,8 @@ $(document).ready(function() {
     var wid = $("body").width();
     if (wid < 640) {
         $(".wd").attr('autocomplete', 'off');
+    }else{
+        $(".wd").focus();
     }
 
     function sub() {
