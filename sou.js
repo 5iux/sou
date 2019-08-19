@@ -11,6 +11,8 @@ $(document).ready(function() {
     var wid = $("body").width();
     if (wid < 640) {
         $(".wd").attr('autocomplete', 'off');
+    }else{
+    	$(".wd").focus();
     }
     //按钮
     $(".sou li").click(function() {
@@ -44,15 +46,14 @@ $(document).ready(function() {
         $(".list").addClass('closed');
         $(".mywth").removeClass('hidden');
     });
-    $(".mywth").click(function(event) {
+    /*$(".mywth").click(function(event) {
         var wt = $("body").width();
         if (wt > 750) {
             window.location.href = "https://tianqi.qq.com/";
         } else {
-            //window.location.href = "https://apip.weatherdt.com/h5.html?id=JrCSiXLssE";
+            //window.location.href = "https://www.baidu.com/s?ie=utf-8&word=%E5%A4%A9%E6%B0%94";
         }
-    });
-
+    });*/
 });
 
 
@@ -76,7 +77,7 @@ $.ajax({
 
         $('.wea_hover').css('background-image', 'url(../wea/icon/bg/' + res.HeWeather6[0].now.cond_code + myday + '.png)');
         //今日天气
-        $('.wea_top').append('<span class="city"><b>' + res.HeWeather6[0].basic.location + '</b> ' + res.HeWeather6[0].update.loc + ' 更新</span><span class="img" style="background:url(../wea/icon/' + res.HeWeather6[0].now.cond_code + myday + '.png) no-repeat center/contain;"></span> <span class="tem"><b>' + res.HeWeather6[0].now.tmp + '℃</b>' + res.HeWeather6[0].now.cond_txt + '</span><span class="air">紫外线指数：' + res.HeWeather6[0].lifestyle[5].brf + '<br>相对湿度：' + res.HeWeather6[0].now.hum + '%<br>' + res.HeWeather6[0].now.wind_dir + '：' + res.HeWeather6[0].now.wind_sc + '级</span><span class="air_tips">' + res.HeWeather6[0].lifestyle[1].txt+"<br>"+ res.HeWeather6[0].lifestyle[2].txt + '</span>');
+        $('.wea_top').append('<span class="city"><b>' + res.HeWeather6[0].basic.location + '</b> ' + res.HeWeather6[0].update.loc + ' 更新</span><span class="img" style="background:url(../wea/icon/' + res.HeWeather6[0].now.cond_code + myday + '.png) no-repeat center/contain;"></span> <span class="tem"><b>' + res.HeWeather6[0].now.tmp + '℃</b>' + res.HeWeather6[0].now.cond_txt + '</span><span class="air">紫外线指数：' + res.HeWeather6[0].lifestyle[5].brf + '<br>相对湿度：' + res.HeWeather6[0].now.hum + '%<br>' + res.HeWeather6[0].now.wind_dir + '：' + res.HeWeather6[0].now.wind_sc + '级</span><span class="air_tips">' + res.HeWeather6[0].lifestyle[3].txt + '</span>');
         //今日指数
         $('.wea_con ul').append('<li>舒适度指数<br><b>' + res.HeWeather6[0].lifestyle[0].brf + '</b></li>');
         $('.wea_con ul').append('<li>穿衣指数<br><b>' + res.HeWeather6[0].lifestyle[1].brf + '</b></li>');
