@@ -46,14 +46,13 @@ $(document).ready(function() {
         $(".list").addClass('closed');
         $(".mywth").removeClass('hidden');
     });
-    /*$(".mywth").click(function(event) {
+    $(".mywth").click(function(event) {
         var wt = $("body").width();
-        if (wt > 750) {
-            window.location.href = "https://tianqi.qq.com/";
-        } else {
-            //window.location.href = "https://www.baidu.com/s?ie=utf-8&word=%E5%A4%A9%E6%B0%94";
+        if (wt < 750 || wt == 750) {
+            //window.location.href = "https://tianqi.qq.com/";
+            window.location.href = "https://apip.weatherdt.com/h5.html?id=pjICbzAo4C";
         }
-    });*/
+    });
 });
 
 
