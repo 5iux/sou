@@ -14,7 +14,6 @@
 + php版本：[https://5iux.cn/](https://5iux.cn/)  
 
 
-+ 静态js版本：[https://5iux.github.io/sou/home.html](https://5iux.github.io/sou/home.html)  
 > 临时更新下,天气插件BUG多
   
   
