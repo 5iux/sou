@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /*
 作者:D.Young
 主页：https://yyv.me/
@@ -6,6 +7,7 @@ github：https://github.com/5iux/sou
 日期：2019-07-11
 版权所有，请勿删除
 */
+
 
 /*@import url(//fonts.loli.net/earlyaccess/notosansscsliced.css);*/
 
@@ -209,7 +211,6 @@ a {
     line-height: 50px;
     display: block;
     text-align: center;
-
 }
 
 #menu {
@@ -284,7 +285,6 @@ a {
     background: #fff;
 }
 
-
 .list {
     width: 337px;
     padding: 0 20px;
@@ -294,7 +294,7 @@ a {
     position: absolute;
     right: 0px;
     z-index: 2000;
-    background: #f1f1f1;
+    background: #222d46;
     transition: 0.3s all linear;
 }
 
@@ -305,7 +305,7 @@ a {
 .list ul {
     width: 330px;
     float: left;
-    padding: 20px 0;
+    padding: 0 0 20px;
     margin-bottom: 20px;
 }
 
@@ -320,13 +320,13 @@ a {
 
 .list ul li a {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     transition: 0.2s all linear;
     height: 100%;
     display: block;
-    color: #000;
+    color: #fff;
     font-weight: 500;
-    background: #fff;
+    background: #293550;
     text-align: left;
     font-size: 12px;
 }
@@ -342,8 +342,10 @@ a {
 }
 
 .list ul li:hover a {
-    background: #29f;
     color: #fff;
+    background-color: #29f;
+    background-image: linear-gradient(135deg, rgba(35, 153, 255) 0%, rgba(84, 175, 253) 100%);
+    box-shadow: 0 3px 3px rgba(0, 40, 70, .3);
 }
 
 .list ul li:hover a i {
@@ -354,11 +356,11 @@ a {
     width: 100%;
     height: 40px;
     line-height: 40px;
-    margin: 10px 0;
+    margin: 30px 0 0;
     text-align: left;
     text-indent: 10px;
-    border-bottom: 1px dashed #dedede;
-    color: #000;
+    /*border-bottom: 1px dashed #dedede;*/
+    color: #fff;
     font-size: 18px;
     font-weight: bold;
 }
@@ -377,6 +379,7 @@ a {
     height: 20px;
     line-height: 20px;
     cursor: pointer;
+    z-index: 100000;
 }
 
 .mywth .wea {
@@ -428,7 +431,7 @@ a {
 
 .wea_top span.city {
     width: 100%;
-    line-height: 30px;
+    line-height: 26px;
 }
 
 .wea_top span.city b {
@@ -437,8 +440,8 @@ a {
     background: #fd0;
     font-size: 14px;
     padding: 0 10px;
-    border-radius: 10px;
-    color: #18e;
+    border-radius: 13px;
+    color: #06b;
     margin-right: 5px;
 }
 
@@ -467,6 +470,10 @@ a {
     height: 40px;
     width: 120px;
     margin-top: 30px;
+}
+
+.wea_top span.air_tips {
+    text-indent: 15px;
 }
 
 .wea_con {
@@ -499,8 +506,9 @@ a {
     color: #fd0;
     font-size: 14px;
 }
+
 .wea_con ul li:hover {
-    background:rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     color: #000;
 }
 
@@ -512,7 +520,6 @@ a {
     line-height: 16px;
     margin: 5px 0;
 }
-
 
 .wea_foot ul {
     position: relative;
@@ -536,7 +543,7 @@ a {
 }
 
 .wea_foot ul li b {
-    color: #fd0;
+    color: #0f0;
     font-weight: normal;
 }
 
@@ -549,57 +556,47 @@ a {
     .con {
         top: 0px;
     }
-
     .con .shlogo {
         width: 320px;
         height: 100px;
     }
-
     .con .sou form .wd:focus {
         background: #f1f1f1;
         box-shadow: none;
         border-color: #ccc
     }
-
     .con .sou form button {
         border-radius: 25px;
     }
-
     #menu.on {
         right: 270px;
     }
-
     .list {
         width: 227px;
     }
-
     .list ul {
         width: 220px;
     }
-
     .con .sou ul li {
         width: 100px;
         font-size: 12px;
         text-indent: 30px;
     }
-
     .home,
     #menu {
         top: 5px;
     }
-
     .mywth {
         color: #777;
         left: 10px;
         top: 20px;
     }
-    .mywth .wea_hover{
+    .mywth .wea_hover {
         display: none;
     }
     .mywth.hidden {
         display: none;
     }
-
 }
 
 @media (max-height: 420px) {
@@ -607,11 +604,9 @@ a {
         margin: 0;
         top: 0px;
     }
-
     .con .sou form .wd {
         text-indent: 50px;
     }
-
     .con .sou form:after {
         content: "";
         display: block;
@@ -624,11 +619,9 @@ a {
         border-radius: 50%;
         overflow: hidden;
     }
-
     .con .shlogo {
         display: none;
     }
-
     .home,
     #menu,
     .mywth,
@@ -637,26 +630,25 @@ a {
     }
 }
 
-
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f6f6f6;
+    background: #222d46;
     border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #29f;
+    background: #293550;
     border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #18e;
+    background: #293550;
 }
 
 ::-webkit-scrollbar-corner {
-    background: #f6f6f6;
+    background: #222d46;
 }
