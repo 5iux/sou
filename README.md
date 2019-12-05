@@ -13,6 +13,8 @@
  
 + php版本：[https://5iux.cn/](https://5iux.cn/)  
 
++ html版本：[https://g.5iux.cn/](https://g.5iux.cn/)  
+
 
 > 临时更新下,天气插件BUG多
   
@@ -21,13 +23,10 @@
 
 ### IP测试页面  
 新增ip测试工具  
-+ [https://5iux.github.io/sou/ip/](https://5iux.github.io/sou/ip/)   
++ [https://g.5iux.cn/sou/ip/](https://5iux.github.io/sou/ip/)   
 
 
-### 影视搜索二级页  
-[https://5iux.cn/movies/](https://5iux.cn/movies/) 
-新增影视搜索二级页，列表接口直接调用的豆瓣api  
-搜索接口直接网上搜了一个；不喜欢的话可以找自己喜欢的在线视频站，然后直接替换`form`表单就可以了  
+
 
 ## 组件：  
 
