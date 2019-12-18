@@ -6,14 +6,12 @@ $q=htmlspecialchars($_POST["q"]);
 if ($q==""||$q==null) {
 }else{
   if ($t=="b"){
-    echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
+    echo'<script>window.open("//www.baidu.com/s?ie=utf-8&word='.$q.'%20-baijiahao","_blank");</script>';
   }else if($t=="g"){
-    echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
+    echo'<script>window.open("https://www.google.com/search?hl=zh&q='.$q.'","_blank");</script>';
   }else{
     //默认谷歌
-        echo'<script>window.location.href="https://www.google.com/search?hl=zh&q='.$q.'"</script>';
-    //可以改为百度
-    //echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'"</script>';
+    echo'<script>window.open("https://www.google.com/search?hl=zh&q='.$q.'","_blank");</script>';
   }
 };
 ?>
