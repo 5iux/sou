@@ -18,14 +18,6 @@
 
 > 临时更新下,天气插件BUG多
   
-  
-## 工具页面：  
-
-### IP测试页面  
-新增ip测试工具  
-+ [https://g.5iux.cn/sou/ip/](https://5iux.github.io/sou/ip/)   
-
-
 
 
 ## 组件：  
