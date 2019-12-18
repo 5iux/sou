@@ -42,9 +42,9 @@
 > [心知天气文档](https://docs.seniverse.com/widget/start/get.html)  
 
 
-~~天气组件为`https://dev.heweather.com/`接口，更新快，可以直接调json，参数大家可以到api页面更换调整
-> 注意！使用前请到和风官方申请apikey   
-> apikey在`wea`目录`index.php`中编辑~~  
+~~天气组件为`https://dev.heweather.com/`接口，更新快，可以直接调json，参数大家可以到api页面更换调整~~
+> ~~注意！使用前请到和风官方申请apikey~~   
+> ~~apikey在`wea`目录`index.php`中编辑~~  
 
 
 ~~[天气API](https://dev.heweather.com/docs/api/weather)~~
