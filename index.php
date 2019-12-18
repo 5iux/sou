@@ -125,18 +125,22 @@ if ($q==""||$q==null) {
             <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><i class="iconfont icon-S" style="color:#065fe3;"></i>Swiper</a></li>
         </ul>
     </div>
-    <div class="mywth">
-        <div class="wea_hover">
-            <div class="wea_in wea_top"></div>
-            <div class="wea_in wea_con">
-                <ul></ul>
-            </div>
-            <div class="wea_in wea_foot">
-                <ul></ul>
-            </div>
-        </div>
-        <!--天气插件，基于www.tianqiapi.com 天气接口制作-->
-    </div>    
+    <div id="tp-weather-widget" class="mywth"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "slim",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "auto",
+      token: "fd08684d-bf66-4982-999d-4d0f260c236d",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
+  
     <div id="content">
         <div class="con">
             <div class="shlogo"></div>
