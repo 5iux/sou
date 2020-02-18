@@ -420,6 +420,9 @@ a {
         left: 10px;
         top: 20px;
     }
+    .mywth.hidden{
+        display: none;
+    }
 }
 
 @media (max-height: 420px) {
@@ -447,6 +450,7 @@ a {
     }
     .home,
     #menu,
+    .mywth,
     .foot {
         display: none;
     }
