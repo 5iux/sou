@@ -7,16 +7,19 @@
 ![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img0726.gif)
 > （图片效果，以实际页面为准） 
 
+### 新增黑暗模式（理论上支持）
+![黑暗模式](https://raw.githubusercontent.com/5iux/sou/master/dark.jpg)   
+
 
 
 ## 示例页面：    
  
 + php版本：[https://5iux.cn/](https://5iux.cn/)  
 
-+ html版本：[https://g.5iux.cn/](https://g.5iux.cn/)  
++ html+js+css版本(源码自行另存就好)：[https://g.5iux.cn/](https://g.5iux.cn/)  
 
 
-> 临时更新下,天气插件BUG多
+
   
 
 
@@ -27,22 +30,15 @@
 嫌麻烦的可以使用js版本示例里面的`font-awesome`  
 ### 天气组件  
 
-由于大家很多人反馈天气组件无法使用，这改为心知天气插件  
-
-> 因为免费版本只提供一定访问频率限制，建议大家自己注册个KEY
-> 具体使用方法大家还是自己看文档吧，很简答的：  
-> [心知天气文档](https://docs.seniverse.com/widget/start/get.html)  
 
 
-~~天气组件为`https://dev.heweather.com/`接口，更新快，可以直接调json，参数大家可以到api页面更换调整~~
-> ~~注意！使用前请到和风官方申请apikey~~   
-> ~~apikey在`wea`目录`index.php`中编辑~~  
+天气组件为`https://dev.heweather.com/`接口，更新快，可以直接调json，参数大家可以到api页面更换调整~~
+> 注意！使用前请到和风官方申请apikey   
+> apikey在`wea`目录`index.php`中编辑  
+> 不喜欢的话可以替换为官方组件  
 
 
-~~[天气API](https://dev.heweather.com/docs/api/weather)~~
-
-*~~天气组件已经替换为`www.tianqiapi.com`接口，直接调json，应该不会失效了，参数大家可以到api页面更换调整：~~*   
-*~~[天气API](https://www.tianqiapi.com/?action=v1)~~*  
+[天气API地址](https://dev.heweather.com/docs/api/weather)
 
 
 
