@@ -7,6 +7,10 @@
 ![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img0726.gif)
 > （图片效果，以实际页面为准） 
 
+## 下载地址：  
+![Releases](https://github.com/5iux/sou/releases)  
+
+
 ### 新增黑暗模式（理论上支持）
 ![黑暗模式](https://raw.githubusercontent.com/5iux/sou/master/dark.jpg)   
 
@@ -16,7 +20,8 @@
  
 + php版本：[https://5iux.cn/](https://5iux.cn/)  
 
-+ html+js+css版本(源码自行另存就好)：[https://g.5iux.cn/](https://g.5iux.cn/)  
++ html+js+css版本：[https://g.5iux.cn/](https://g.5iux.cn/)  
++ html+js+css源码：[https://github.com/5iux/5iux.github.io](https://github.com/5iux/5iux.github.io)  
 
 
 

@@ -29,7 +29,7 @@ body {
 
 html {
     font-family: 'Noto Sans SC Sliced', PingFangSC-Light, Microsoft YaHei UI, Microsoft YaHei, helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     color: #000;
 }
 
@@ -117,9 +117,22 @@ a {
     border: 1px solid #ddd;
     border-radius: 25px;
     line-height: 100%;
-    text-indent: 20px;
     font-size: 18px;
+    text-indent: 50px;
 }
+.con .sou form .lg {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 13px;
+        top: 10px;
+       /* background: url(icon/lg.svg) no-repeat center/cover;*/
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+}
+
 
 .con .sou form .wd:focus {
     background: #fff;
@@ -141,7 +154,7 @@ a {
     border-radius: 50%;
     color: #777;
 }
-
+/*
 .con .sou ul {
     height: 40px;
     margin: 0 auto;
@@ -182,6 +195,24 @@ a {
     background-position: center;
     background-color: #fff;
     transform: scale(0.7);
+}*/
+.con .sou #word{
+    width: calc(100% - 70px);
+    border: 15px solid #f1f1f1;
+    border-radius: 10px;
+    left:20px;
+    position: absolute;z-index: 10000; top:65px;
+    max-height: 150px;
+    background: #f1f1f1;
+    line-height: 30px; font-style: 16px;overflow: hidden;
+    display: none; 
+}
+.con .sou #word .click_work{
+    cursor: pointer;
+    color: #555;
+}
+.con .sou #word .click_work:hover{
+    color: #29f;
 }
 
 .foot {
@@ -458,23 +489,6 @@ svg.icon {
     .con {
         margin: 0;
         top: 0px;
-    }
-
-    .con .sou form .wd {
-        text-indent: 50px;
-    }
-
-    .con .sou form:after {
-        content: "";
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        background: url(icon/lg.svg) no-repeat center/cover;
-        border-radius: 50%;
-        overflow: hidden;
     }
 
     .con .shlogo {

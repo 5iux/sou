@@ -1,14 +1,12 @@
 <?php
 //禁用错误报告
 error_reporting(0);
-$t=htmlspecialchars($_POST["t"]);
+$t=htmlspecialchars($_GET["t"]);
 $q=htmlspecialchars($_POST["q"]);
 if (empty($q)) {
 }else{
   if ($t=="b"){
     echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'";</script>';
-  }else if($t=="g"){
-    echo'<script>window.location.href="https://www.google.com.hk/search?hl=zh&q='.$q.'";</script>';
   }else{
     //默认谷歌
     echo'<script>window.location.href="https://www.google.com.hk/search?hl=zh&q='.$q.'";</script>';
@@ -21,6 +19,7 @@ if (empty($q)) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="icon/192.png" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="icon/300.png" />
@@ -36,7 +35,7 @@ if (empty($q)) {
   <title>简单搜索</title>
   <link href="style.css?t=<?php echo date("ymdhi"); ?>" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-  <script src="//at.alicdn.com/t/font_1230786_59ub5vczww4.js"></script>
+  <script src="https://at.alicdn.com/t/font_1230786_59ub5vczww4.js"></script>
   <script src="sou.js?t=<?php echo date("ymdhi"); ?>"></script>
 <style>
 </style>
@@ -56,7 +55,7 @@ if (empty($q)) {
             <li><a rel="nofollow" href="http://www.zmz2019.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zimu"></use></svg>字幕组</a></li>
             <li><a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-acfun"></use></svg>ACFUN</a></li>
             <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bili"></use></svg>哔哩哔哩</a></li>
-            <li><a rel="nofollow" href="https://dagu.ml" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yunbo"></use></svg>影视搜索</a></li>
+            <li><a rel="nofollow" href="https://yingshi.ml" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yunbo"></use></svg>影视搜索</a></li>
           <!------> 
             <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-youxiang"></use></svg> 邮箱</li>
             <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gmail"></use></svg>Gmail</a></li>
@@ -66,7 +65,7 @@ if (empty($q)) {
             <li><a rel="nofollow" href="https://mail.qq.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg>QQ邮箱</a></li>
             <li><a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yunyouxiang"></use></svg>阿里邮箱</a></li>
           <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-msg"></use></svg> 社交</li>
+            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-msg"></use></svg> 社交资讯</li>
             <li><a rel="nofollow" href="https://www.weibo.com" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo"></use></svg>微博</a></li>
             <li><a rel="nofollow" href="https://www.zhihu.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu"></use></svg>知乎</a></li>
             <li><a rel="nofollow" href="https://www.douban.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-douban"></use></svg>豆瓣</a></li>
@@ -118,7 +117,6 @@ if (empty($q)) {
             <li><a rel="nofollow" href="http://www.slimego.cn/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shilaimu"></use></svg>史莱姆</a></li>
             <li><a rel="nofollow" href="https://feedly.com" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-feedly"></use></svg>Feedly</a></li>         
             <li><a rel="nofollow" href="https://pan.baidu.com" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-baiduyun"></use></svg>百度网盘</a></li>
-            <li><a rel="nofollow" href="https://www.baiduwp.com" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloudflare"></use></svg>网盘解析</a></li>
             <li><a rel="nofollow" href="https://www.mdeditor.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-md"></use></svg>MD编辑器</a></li>
             <li><a rel="nofollow" href="http://cubic-bezier.com" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-quxian"></use></svg>贝赛尔曲线</a></li>
             <li><a rel="nofollow" href="/base64/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-base64"></use></svg>Base64</a></li>
@@ -172,14 +170,23 @@ if (empty($q)) {
             <div class="shlogo" ></div>
             <div class="sou">
                 <form action="" method="post" target="_self">
-                    <input class="t" type="text" value="" name="t" hidden>
+                   <?php 
+                   if ($t=="b"){
+                     echo'<div class="lg" style="background: url(icon/baidu.svg) no-repeat center/cover;" onclick="window.location.href=\'?t=\';"></div>';
+                   }else{
+                     echo'<div class="lg" style="background: url(icon/g.svg) no-repeat center/cover;" onclick="window.location.href=\'?t=b\';"></div>';
+                   }
+
+                    ?>
+                    <!--input class="t" type="text" value="" name="t" hidden-->
                     <input class="wd" type="text" placeholder="请输入搜索内容" name="q" x-webkit-speech lang="zh-CN" autocomplete="off">
                     <button><svg class="icon" style=" width: 21px; height: 21px; opacity: 0.5;" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg></button>
                 </form>
-                <ul>
+                <div id="word"></div>
+                <!--ul>
                     <li data-s="baidu" target="_blank"><i style="background-image: url(icon/baidu.svg);"></i>百度一下</li>
                     <li data-s="google" target="_blank"><i style="background-image: url(icon/g.svg);"></i>谷歌一下</li>
-                </ul>
+                </ul-->
             </div>
         </div>
         <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://yyv.me/">歪歪喂</a> . All rights reserved.</div>
@@ -188,7 +195,7 @@ if (empty($q)) {
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2020-03-23
+日期：2020-03-24
 版权所有，请勿删除
 -->
 </body>
