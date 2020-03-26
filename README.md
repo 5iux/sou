@@ -8,7 +8,7 @@
 > （图片效果，以实际页面为准） 
 
 ## 下载地址：  
-![Releases](https://github.com/5iux/sou/releases)  
+[Releases](https://github.com/5iux/sou/releases)  
 
 
 ### 新增黑暗模式（理论上支持）
