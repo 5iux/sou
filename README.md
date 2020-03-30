@@ -4,7 +4,7 @@
 
 
 ###  GIF
-![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/img0726.gif)
+![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/0326.gif)
 > （图片效果，以实际页面为准） 
 
 
