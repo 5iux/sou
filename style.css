@@ -201,7 +201,7 @@ a {
     border: 15px solid #f1f1f1;
     border-radius: 10px;
     left:20px;
-    position: absolute;z-index: 10000; top:65px;
+    position: absolute;z-index: 500; top:65px;
     max-height: 150px;
     background: #f1f1f1;
     line-height: 30px; font-style: 16px;overflow: hidden;
@@ -526,7 +526,13 @@ svg.icon {
         border: 1px solid #293550;
         color: #bbb;
     }
-}
+    .con .sou #word {
+        border: 15px solid #293550;
+        background: #293550;
+    }
+    .con .sou #word .click_work {
+        color: #89b;
+    }
 
 ::-webkit-scrollbar {
     width: 6px;
