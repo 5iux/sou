@@ -41,7 +41,7 @@
 嫌麻烦的可以使用js版本示例里面的`font-awesome`  
 ### 天气组件  
 
-[天气API地址](https://dev.heweather.com/docs/api/weather)
+[天气API地址](https://dev.heweather.com/widget/simple)
 
 
 
