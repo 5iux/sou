@@ -41,12 +41,10 @@
 嫌麻烦的可以使用js版本示例里面的`font-awesome`  
 ### 天气组件  
 
-
-
-天气组件为`https://dev.heweather.com/`接口，更新快，可以直接调json，参数大家可以到api页面更换调整~~
-> 注意！使用前请到和风官方申请apikey   
+~~天气组件为`https://dev.heweather.com/`接口，更新快，可以直接调json，参数大家可以到api页面更换调整~~
+~~> 注意！使用前请到和风官方申请apikey   
 > apikey在`wea`目录`index.php`中编辑  
-> 不喜欢的话可以替换为官方组件  
+> 不喜欢的话可以替换为官方组件  ~~
 
 
 [天气API地址](https://dev.heweather.com/docs/api/weather)
