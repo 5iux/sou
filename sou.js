@@ -2,18 +2,18 @@
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2020/03/24
+日期：2020/04/13
 版权所有，请勿删除
 */
 
 $(document).ready(function() {
     //判断窗口大小，添加输入框自动完成
-    /* var wid = $("body").width();
+     var wid = $("body").width();
      if (wid < 640) {
-         $(".wd").attr('autocomplete', 'off');
+        // $(".wd").attr('autocomplete', 'off');
      }else{
          $(".wd").focus();
-     }*/
+     }
     //菜单点击
     $("#menu").click(function(event) {
         $(this).toggleClass('on');

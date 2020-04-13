@@ -174,6 +174,7 @@ if (empty($q)) {
                    if ($t=="b"){
                      echo'<div class="lg" style="background: url(icon/baidu.svg) no-repeat center/cover;" onclick="window.location.href=\'?t=\';"></div>';
                    }else{
+                    //默认谷歌图标
                      echo'<div class="lg" style="background: url(icon/g.svg) no-repeat center/cover;" onclick="window.location.href=\'?t=b\';"></div>';
                    }
 
@@ -195,7 +196,7 @@ if (empty($q)) {
 作者:D.Young
 主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2020-03-24
+日期：2020/04/13
 版权所有，请勿删除
 -->
 </body>
