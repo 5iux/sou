@@ -2,9 +2,9 @@
 
 /*
 作者:D.Young
-主页：https://yyv.me/
+主页：https://blog.5iux.cn/
 github：https://github.com/5iux/sou
-日期：2019-07-11
+日期：2020-05-19
 版权所有，请勿删除
 */
 
@@ -119,6 +119,7 @@ a {
     line-height: 100%;
     font-size: 18px;
     text-indent: 50px;
+    transition: 0.3s all;
 }
 .con .sou form .lg {
         display: block;
@@ -136,7 +137,7 @@ a {
 
 .con .sou form .wd:focus {
     background: #fff;
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    box-shadow: 0 0px 15px 0 rgba(32, 33, 36, 0.2);
     border-color: #fff
 }
 
@@ -154,64 +155,22 @@ a {
     border-radius: 50%;
     color: #777;
 }
-/*
-.con .sou ul {
-    height: 40px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
 
-.con .sou ul li {
-    width: 120px;
-    margin: 0 10px;
-    float: left;
-    -webkit-tap-highlight-color: transparent;
-    background: #eee;
-    font-size: 16px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    text-indent: 30px;
-    cursor: pointer;
-    position: relative;
-    border-radius: 20px;
-}
-
-.con .sou ul li:active {
-    background: #fff;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
-}
-
-.con .sou ul li i {
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 40px;
-    left: 0;
-    border-radius: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
-    transform: scale(0.7);
-}*/
 .con .sou #word{
     width: calc(100% - 70px);
     border: 15px solid #f1f1f1;
     border-radius: 10px;
     left:20px;
     position: absolute;z-index: 500; top:65px;
-    max-height: 150px;
     background: #f1f1f1;
     line-height: 30px; font-style: 16px;overflow: hidden;
     display: none; 
 }
-.con .sou #word .click_work{
+.con .sou #word .li{
     cursor: pointer;
     color: #555;
 }
-.con .sou #word .click_work:hover{
+.con .sou #word .li:hover{
     color: #29f;
 }
 
@@ -363,16 +322,6 @@ a {
     font-size: 12px;
 }
 
-/*.list ul li a i {
-    margin-right: 5px;
-    margin-left: 15px;
-    transition: 0.2s all linear;
-}
-
-.list ul li a i.iconfont {
-    font-size: 14px;
-}
-*/
 .list ul li:hover a {
     color: #fff;
     background-color: #29f;
@@ -380,10 +329,6 @@ a {
     box-shadow: 0 3px 3px rgba(0, 40, 70, .3);
 }
 
-/*.list ul li:hover a i {
-    color: #fff !important;
-}
-*/
 .list ul li.title {
     width: 100%;
     height: 40px;
@@ -397,11 +342,6 @@ a {
     font-weight: bold;
 }
 
-/*.list ul li.title i {
-    color: #29f;
-    margin-right: 5px;
-    font-weight: normal;
-}*/
 
 .mywth {
     position: absolute;
@@ -448,6 +388,7 @@ svg.icon {
     .con .sou form button {
         border-radius: 25px;
     }
+    .con .sou #word{max-height: 150px;}
 
     #menu.on {
         right: 270px;
@@ -510,11 +451,6 @@ svg.icon {
 
     .mywth {
         color: #bbb;
-    }
-
-    .con .sou ul li {
-        background: #293550;
-        color: #fff;
     }
 
     .con .sou form .wd:focus {

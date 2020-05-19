@@ -1,0 +1,211 @@
+@charset "utf-8";
+/*
+作者:D.Young
+主页：https://blog.5iux.cn/
+github：https://github.com/5iux/sou
+日期：2020-05-19
+版权所有，请勿删除
+*/
+
+
+.mywth {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.mywth .wea {
+    display: inline-block;
+    height: 18px;
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+
+.mywth .wea_hover {
+    width: 400px;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100000;
+    font-size: 12px;
+    line-height: 20px;
+    left: 0;
+    top: 30px;
+    box-shadow: 5px 5px 5px 0 rgba(33, 150, 243, 0.3);
+    border-radius: 15px;
+    /* background: #fff; 
+    background: linear-gradient(45deg, #549aff,#602fff);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.mywth:hover .wea_hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wea_in {
+    position: relative;
+    float: left;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+.wea_top span {
+    display: block;
+    float: left;
+    line-height: 20px;
+}
+
+.wea_top span.city {
+    width: 100%;
+    line-height: 26px;
+}
+
+.wea_top span.city b {
+    display: inline-block;
+    float: left;
+    background: #fd0;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 13px;
+    color: #06b;
+    margin-right: 5px;
+}
+
+.wea_top span.img {
+    width: 50px;
+    height: 120px;
+}
+
+.wea_top span.tem {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.wea_top span.tem b {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-weight: lighter;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.wea_top span.air {
+    height: 40px;
+    width: 120px;
+    margin-top: 30px;
+}
+.wea_top span.air_tips{
+    text-indent: 15px;
+}
+.wea_con {
+    margin: 20px 10px;
+    position: relative;
+    float: left;
+}
+
+.wea_con ul {
+    width: 100%;
+    margin-left: 1px;
+}
+
+.wea_con ul li {
+    float: left;
+    width: calc(25% - 12px);
+    font-size: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin: 0 -1px -1px 0;
+}
+
+.wea_con ul li b {
+    color: #fd0;
+    font-size: 14px;
+}
+.wea_con ul li:hover {
+    background:rgba(255,255,255,0.3);
+    color: #000;
+}
+
+.wea_con ul li i {
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 16px;
+    margin: 5px 0;
+}
+
+
+.wea_foot ul {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.wea_foot ul li {
+    float: left;
+    width: 33.3%;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wea_foot ul li img {
+    display: inline-block;
+    vertical-align: center;
+    height: 30px;
+    margin: 5px;
+}
+
+.wea_foot ul li b {
+    color: #0f0;
+    font-weight: normal;
+}
+
+.wea_foot ul li i {
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 640px) {
+
+    .mywth {
+        color: #777;
+        left: 10px;
+        top: 20px;
+    }
+    .mywth .wea_hover{
+        display: none;
+    }
+    .mywth.hidden {
+        display: none;
+    }
+
+}
+
+@media (max-height: 420px) {
+
+    .mywth{
+        display: none;
+    }
+}

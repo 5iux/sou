@@ -1,19 +1,19 @@
 /*
 作者:D.Young
-主页：https://yyv.me/
+主页：https://blog.5iux.cn/
 github：https://github.com/5iux/sou
-日期：2020/04/13
+日期：2020-05-19
 版权所有，请勿删除
 */
 
 $(document).ready(function() {
     //判断窗口大小，添加输入框自动完成
-     var wid = $("body").width();
-     if (wid < 640) {
-        // $(".wd").attr('autocomplete', 'off');
-     }else{
-         $(".wd").focus();
-     }
+    var wid = $("body").width();
+    if (wid < 640) {
+        //$(".wd").attr('autocomplete', 'off');
+    } else {
+        $(".wd").focus();
+    }
     //菜单点击
     $("#menu").click(function(event) {
         $(this).toggleClass('on');
@@ -47,7 +47,7 @@ $(function() {
             jsonp: 'cb', //回调函数的参数名(键值)key
             // jsonpCallback: 'fun', //回调函数名(值) value
             beforeSend: function() {
-                $('#word').append('<div>正在加载。。。</div>');
+               // $('#word').append('<li>正在加载。。。</li>');
             },
             success: function(data) {
                 $('#word').empty().show();
@@ -56,7 +56,7 @@ $(function() {
                     $('#word').hide();
                 }
                 $.each(data.s, function() {
-                    $('#word').append('<div class="click_work"><svg class="icon" style=" width: 15px; height: 15px; opacity: 0.5;" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg> ' + this + '</div>');
+                    $('#word').append('<li><svg class="icon" style=" width: 15px; height: 15px; opacity: 0.5;" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg> ' + this + '</li>');
                 })
             },
             error: function() {
@@ -67,7 +67,7 @@ $(function() {
         })
     })
     //点击搜索数据复制给搜索框
-    $(document).on('click', '.click_work', function() {
+    $(document).on('click', '#word li', function() {
         var word = $(this).text();
         $('.wd').val(word);
         $('#word').hide();
