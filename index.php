@@ -3,13 +3,12 @@
 error_reporting(0);
 $t=htmlspecialchars($_GET["t"]);
 $q=htmlspecialchars($_POST["q"]);
-if (empty($q)) {
-}else{
+if (!empty($q)) {
   if ($t=="b"){
-    echo'<script>window.location.href="//www.baidu.com/s?ie=utf-8&word='.$q.'";</script>';
+	header("Location: https://www.baidu.com/s?ie=utf-8&word=".$q,true,302);
   }else{
     //默认谷歌
-    echo'<script>window.location.href="https://www.google.com.hk/search?hl=zh&q='.$q.'";</script>';
+	header("Location: https://www.google.com.hk/search?hl=zh&q=".$q,true,302);
   }
 };
 ?>
@@ -149,35 +148,11 @@ if (empty($q)) {
                 <ul></ul>
             </div>
         </div>
-        <!--天气插件，基于www.tianqiapi.com 天气接口制作-->
     </div>    
-    <!--div class="mywth" style="width: 320px;">
+	<!--天气插件，基于www.tianqiapi.com 天气接口制作-->
+    <div class="mywth" style="width: 320px;">
        <div id="he-plugin-simple"></div>
-        <script>
-        WIDGET = {
-          CONFIG: {
-            "modules": "01234",
-            "background": 5,
-            "tmpColor": "4A4A4A",
-            "tmpSize": "12",
-            "cityColor": "4A4A4A",
-            "citySize": "12",
-            "aqiSize": "12",
-            "weatherIconSize": "16",
-            "alertIconSize": "14",
-            "padding": "0px 5px 0px 5px",
-            "shadow": "1",
-            "language": "auto",
-            "fixed": "false",
-            "vertical": "middle",
-            "horizontal": "left",
-            "key": "自己的key"
-          }
-          /*天气key自己去官方申请吧大佬们！https://dev.heweather.com/widget/simple*/
-        }
-        </script>
-        <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
-    </div-->    
+    </div>    
     <div id="content">
         <div class="con">
             <div class="shlogo" style="background: url(icon/logo3.svg) no-repeat center/cover;"></div>
@@ -190,17 +165,11 @@ if (empty($q)) {
                     //都能搭建服务器了，这里不知道改吗大佬们？问的不止一个了 -_-!
                      echo'<div class="lg" style="background: url(icon/g.svg) no-repeat center/cover;" onclick="window.location.href=\'?t=b\';"></div>';
                    }
-
-                    ?>
-                    <!--input class="t" type="text" value="" name="t" hidden-->
+                   ?>
                     <input class="wd" type="text" placeholder="请输入搜索内容" name="q" x-webkit-speech lang="zh-CN" autocomplete="off">
                     <button><svg class="icon" style=" width: 21px; height: 21px; opacity: 0.5;" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg></button>
                 </form>
                 <div id="word"></div>
-                <!--ul>
-                    <li data-s="baidu" target="_blank"><i style="background-image: url(icon/baidu.svg);"></i>百度一下</li>
-                    <li data-s="google" target="_blank"><i style="background-image: url(icon/g.svg);"></i>谷歌一下</li>
-                </ul-->
             </div>
         </div>
         <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://blog.5iux.cn/">5iux</a> . All rights reserved.</div>
