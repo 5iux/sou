@@ -148,11 +148,7 @@ if (!empty($q)) {
                 <ul></ul>
             </div>
         </div>
-    </div>    
-	<!--天气插件，基于www.tianqiapi.com 天气接口制作-->
-    <div class="mywth" style="width: 320px;">
-       <div id="he-plugin-simple"></div>
-    </div>    
+    </div>     
     <div id="content">
         <div class="con">
             <div class="shlogo" style="background: url(icon/logo3.svg) no-repeat center/cover;"></div>
