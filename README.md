@@ -6,13 +6,13 @@
 
 
 ###  GIF示例效果
-![简单搜索](https://raw.githubusercontent.com/5iux/sou/master/0326.gif)
+![简单搜索](https://cdn.jsdelivr.net/gh/5iux/sou/0326.gif)
 > （图片效果，以实际页面为准） 
 
 
 
 ### 新增黑暗模式（理论上支持）
-![黑暗模式](https://raw.githubusercontent.com/5iux/sou/master/dark.jpg)   
+![黑暗模式](https://cdn.jsdelivr.net/gh/5iux/sou/dark.jpg)   
 
 
 
@@ -39,7 +39,7 @@
 ## 组件：  
 
 ### 图标：
-图标调用了阿里的图标`https://www.iconfont.cn/`，提供下本地包[点击下载](https://raw.githubusercontent.com/5iux/sou/master/icon.zip)  
+图标调用了阿里的图标`https://www.iconfont.cn/`，提供下本地包[点击下载](https://cdn.jsdelivr.net/gh/5iux/sou/icon.zip)  
 嫌麻烦的可以使用js版本示例里面的`font-awesome`  
 
 
