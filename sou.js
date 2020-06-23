@@ -7,6 +7,22 @@ github：https://github.com/5iux/sou
 */
 
 $(document).ready(function() {
+		$.ajax({
+			 url: 'https://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js?1='+Date.parse(new Date()),
+			 timeout : 300,
+			 success(result,status,xhr){
+			 },
+			 error : function(xhr,textStatus){
+	      if(location.search.split('t=').length==1 && textStatus=='timeout'){
+					window.location.href='http://php.whatime.cn/sou/?t=b'
+	      }
+	      else{
+	        //其他错误的逻辑
+	      }
+	    }
+		})
+	
+	
     //判断窗口大小，添加输入框自动完成
     var wid = $("body").width();
     if (wid < 640) {
