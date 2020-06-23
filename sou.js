@@ -14,7 +14,7 @@ $(document).ready(function() {
 			 },
 			 error : function(xhr,textStatus){
 	      if(location.search.split('t=').length==1 && textStatus=='timeout'){
-					window.location.href='http://php.whatime.cn/sou/?t=b'
+					window.location.href=location.origin+location.pathname+'?t=b'
 	      }
 	      else{
 	        //其他错误的逻辑
