@@ -3,7 +3,7 @@
 作者:D.Young
 主页：https://blog.5iux.cn/
 github：https://github.com/5iux/sou
-日期：2020-05-19
+日期：2020-06-28
 版权所有，请勿删除
 */
 
@@ -25,7 +25,11 @@ github：https://github.com/5iux/sou
     vertical-align: middle;
     padding-bottom: 3px;
 }
-
+@keyframes bgmove{
+	0%{background-position: left;}
+	50%{background-position: right;}
+	100%{background-position: left;}
+}
 .mywth .wea_hover {
     width: 400px;
     padding: 25px 10px;
@@ -41,17 +45,18 @@ github：https://github.com/5iux/sou
     background: linear-gradient(45deg, #549aff,#602fff);*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s all;
+    transition: 0.3s all;
+    animation:bgmove 6s linear infinite; 
 }
 
 .mywth:hover .wea_hover {
     visibility: visible;
     opacity: 1;
-}
+    }
 
 .wea_in {
     position: relative;
