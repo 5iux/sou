@@ -28,8 +28,7 @@
  
 + php版本：[https://5iux.cn/](https://5iux.cn/)  
 
-+ html+js+css版本：[https://g.5iux.cn/](https://g.5iux.cn/) （懒得更新了）  
-+ html+js+css源码：[https://github.com/5iux/5iux.github.io](https://github.com/5iux/5iux.github.io)  
++ html+js+css版本(写了个新的，有空去围观)：[https://github.com/5iux/5iux.github.io](https://github.com/5iux/5iux.github.io)  
 
 
 
