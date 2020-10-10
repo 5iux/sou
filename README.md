@@ -65,4 +65,4 @@
 
 虽然我也不喜欢广告（狗头）
 
-[![吃饭链接](https://cdn.5iux.cn/pic/20201010171915.jpg "title")](https://wat.dyartstyle.com/)
+[![吃饭链接](https://cdn.5iux.cn/pic/20201010171915.jpg "点击查看")](https://wat.dyartstyle.com/)
