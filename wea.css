@@ -1,9 +1,9 @@
 @charset "utf-8";
 /*
 作者:D.Young
-主页：https://blog.5iux.cn/
+主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2020-06-28
+日期：2019-07-11
 版权所有，请勿删除
 */
 
@@ -50,7 +50,7 @@ github：https://github.com/5iux/sou
     visibility: hidden;
     opacity: 0;
     transition: 0.3s all;
-    animation:bgmove 6s linear infinite; 
+    animation:bgmove 16s linear infinite; 
 }
 
 .mywth:hover .wea_hover {

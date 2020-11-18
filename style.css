@@ -2,9 +2,9 @@
 
 /*
 作者:D.Young
-主页：https://blog.5iux.cn/
+主页：https://yyv.me/
 github：https://github.com/5iux/sou
-日期：2020-05-19
+日期：2019-07-11
 版权所有，请勿删除
 */
 
@@ -177,7 +177,6 @@ a {
 .foot {
     position: absolute;
     bottom: 10px;
-    z-index: 1000;
     text-align: center;
     width: 100%;
     color: #999;
@@ -416,9 +415,6 @@ svg.icon {
     .mywth {
         color: #777;
         left: 10px;
-        top: 20px;
-        overflow: hidden;
-
     }
 
     .mywth.hidden {

@@ -21,10 +21,10 @@ if (empty($q)) {
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="referrer" content="no-referrer" />
   <meta name="theme-color" content="#ffffff">
-  <link rel="icon" href="icon/f.png" sizes="192x192" />
-  <link rel="apple-touch-icon-precomposed" href="icon/f.png" />
-  <meta name="msapplication-TileImage" content="icon/f.png" />
-  <link rel="shortcut icon" href="icon/f.png"/>
+  <link rel="icon" href="icon/280.png?v=1.0.1" sizes="280x280" />
+  <link rel="apple-touch-icon-precomposed" href="icon/280.png?v=1.0.1" />
+  <meta name="msapplication-TileImage" content="icon/280.png?v=1.0.1" />
+  <link rel="shortcut icon" href="icon/32.png?v=1.0.1"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -39,6 +39,7 @@ if (empty($q)) {
   <script src="//at.alicdn.com/t/font_400990_j21lstb4wx.js"></script>
   <script src="sou.js?t=<?php echo date("ymdhi"); ?>"></script>
   <script src="wea.js?t=<?php echo date("ymdhi"); ?>"></script>
+
 <style>
 </style>
 </head>
@@ -57,6 +58,11 @@ if (empty($q)) {
             <li><a rel="nofollow" href="http://www.zmz2019.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zimu"></use></svg>字幕组</a></li>
             <li><a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-acfun"></use></svg>ACFUN</a></li>
             <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bili"></use></svg>哔哩哔哩</a></li>
+            <li><a rel="nofollow" href="https://www.nfmovies.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netflix"></use></svg>奈非影视</a></li>
+            <li><a rel="nofollow" href="https://k1080.net/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yingshi"></use></svg>K1080</a></li>
+            <li><a rel="nofollow" href="https://www.yunbtv.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yunbo"></use></svg>云播TV</a></li>
+            <li><a rel="nofollow" href="https://lm.didibib.ml/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yingshi06"></use></svg>菲菲影视</a></li>
+            <li><a rel="nofollow" href="https://yingshi.ml/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-syys"></use></svg>影视搜索</a></li>
           <!------> 
             <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-youxiang"></use></svg> 邮箱</li>
             <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gmail"></use></svg>Gmail</a></li>
@@ -89,7 +95,7 @@ if (empty($q)) {
             <li><a rel="nofollow" href="https://wat.dyartstyle.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wat"></use></svg>吾爱淘</a></li>
           <!------>
             <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-sheji"></use></svg> 设计视觉</li>
-            <li><a rel="nofollow" href="https://web.yyv.me/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-daohang1"></use></svg>设计导航</a></li>
+            <li><a rel="nofollow" href="https://hao.5iux.cn/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-daohang1"></use></svg>设计导航</a></li>
             <li><a rel="nofollow" href="https://www.pinterest.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pinterest"></use></svg>Pinterest</a></li>
             <li><a rel="nofollow" href="https://www.behance.net/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-behance"></use></svg>Behance</a></li>
             <li><a rel="nofollow" href="https://www.dribbble.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-dribbble"></use></svg>Dribbble</a></li>
@@ -139,6 +145,7 @@ if (empty($q)) {
             <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-S"></use></svg>Swiper</a></li>
         </ul>
     </div>
+<!--天气-->
     <div class="mywth">
         <div class="wea_hover">
             <div class="wea_in wea_top"></div>
@@ -149,34 +156,10 @@ if (empty($q)) {
                 <ul></ul>
             </div>
         </div>
-        <!--天气插件，基于www.tianqiapi.com 天气接口制作-->
+        <!--天气插件，基于和风天气接口制作-->
     </div>    
-    <!--div class="mywth" style="width: 320px;">
-       <div id="he-plugin-simple"></div>
-        <script>
-        WIDGET = {
-          CONFIG: {
-            "modules": "01234",
-            "background": 5,
-            "tmpColor": "4A4A4A",
-            "tmpSize": "12",
-            "cityColor": "4A4A4A",
-            "citySize": "12",
-            "aqiSize": "12",
-            "weatherIconSize": "16",
-            "alertIconSize": "14",
-            "padding": "0px 5px 0px 5px",
-            "shadow": "1",
-            "language": "auto",
-            "fixed": "false",
-            "vertical": "middle",
-            "horizontal": "left",
-            "key": "自己的key"
-          }
-          /*天气key自己去官方申请吧大佬们！https://dev.heweather.com/widget/simple*/
-        }
-        </script>
-        <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+    <!--div class="mywth" style="width: 200px;">
+       <div id="he-plugin-simple"></div> <script>WIDGET = {CONFIG:{"modules":"10234","background":5,"tmpColor":"4A4A4A","tmpSize":"14","cityColor":"4A4A4A","citySize":"14","aqiSize":"14","weatherIconSize":"20","alertIconSize":"16","padding":"0px","shadow":"0","language":"auto","borderRadius":5,"fixed":"false","vertical":"middle","horizontal":"left","key":"f60588bd99d94495b907562a23e05666"}}</script> <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
     </div-->    
     <div id="content">
         <div class="con">
@@ -187,7 +170,7 @@ if (empty($q)) {
                    if ($t=="b"){
                      echo'<div class="lg" style="background: url(icon/baidu.svg) no-repeat center/cover;" onclick="window.location.href=\'?t=\';"></div>';
                    }else{
-                    //都能搭建服务器了，这里不知道改吗大佬们？问的不止一个了 -_-!
+                    //上面知道把默认谷歌改成百度，这里不知道改吗大佬们？。。
                      echo'<div class="lg" style="background: url(icon/g.svg) no-repeat center/cover;" onclick="window.location.href=\'?t=b\';"></div>';
                    }
 
@@ -203,13 +186,19 @@ if (empty($q)) {
                 </ul-->
             </div>
         </div>
-        <div class="foot">© 2016-<?php echo date("Y") ?> by <a href="https://blog.5iux.cn/">5iux</a> . All rights reserved.</div>
+        <div class="foot" style="height: 40px;">
+          <a href="https://blog.5iux.cn/" style="color: #777;">博客</a> | 
+          <a href="https://hao.5iux.cn/" style="color: #777;">设计导航</a> | 
+          <a href="https://dyartstyle.com/" style="color: #777;">设计资讯</a> | 
+          <a href="https://wat.dyartstyle.com/" style="color: #777;">吾爱淘</a> | 
+          <a href="https://github.com/5iux/sou/" style="color: #777;">Github</a><br>
+          © 2016-<?php echo date("Y") ?> by <a href="https://blog.5iux.cn/">5iux</a> . All rights reserved.</div>
     </div>
 <!--
 作者:D.Young
 主页：https://blog.5iux.cn/
 github：https://github.com/5iux/sou
-日期：2020-05-19
+日期：2020-11-18
 版权所有，请勿删除
 -->
 </body>
