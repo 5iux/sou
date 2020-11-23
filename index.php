@@ -39,12 +39,25 @@ if (empty($q)) {
   <script src="//at.alicdn.com/t/font_400990_j21lstb4wx.js"></script>
   <script src="sou.js?t=<?php echo date("ymdhi"); ?>"></script>
   <script src="wea.js?t=<?php echo date("ymdhi"); ?>"></script>
-
-<style>
-</style>
 </head>
 
 <body>
+    <script>
+    /*随机bing背景start,如无需求可注释掉*/
+    $.ajax({
+        url: './bg/',
+        dataType: 'json',
+        error: function() {
+            console.log('网络错误！');
+        },
+        success: function(res) {
+            //var bgimg;
+            var x=Math.floor(Math.random()*9);
+            $("body").append('<style> body{background:url("https://cn.bing.com/'+res.images[x].url+'") no-repeat center/cover;}</style>');
+        }
+    });
+    /*随机bing背景end*/
+    </script> 
     <div id="menu"><i></i></div>
     <div class="list closed">
         <ul>
@@ -180,10 +193,6 @@ if (empty($q)) {
                     <button><svg class="icon" style=" width: 21px; height: 21px; opacity: 0.5;" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg></button>
                 </form>
                 <div id="word"></div>
-                <!--ul>
-                    <li data-s="baidu" target="_blank"><i style="background-image: url(icon/baidu.svg);"></i>百度一下</li>
-                    <li data-s="google" target="_blank"><i style="background-image: url(icon/g.svg);"></i>谷歌一下</li>
-                </ul-->
             </div>
         </div>
         <div class="foot" style="height: 40px;">
@@ -198,7 +207,7 @@ if (empty($q)) {
 作者:D.Young
 主页：https://blog.5iux.cn/
 github：https://github.com/5iux/sou
-日期：2020-11-18
+日期：2020-11-23
 版权所有，请勿删除
 -->
 </body>
