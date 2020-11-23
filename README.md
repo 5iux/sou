@@ -54,10 +54,11 @@
 已默认添加随机加载bing背景，不需要刻意在index.php中删除；   
 
 如使用自定义背景，可以删除bing背景后在页面内添加以下代码：   
+```html
     <style> 
        body{background:url("https://cn.bing.com//th?id=OHR.HuntsMesa_JA-JP3140979616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp") no-repeat center/cover;}
     </style>
-
+```
 
 ## 其他
 我这个只是个示例，有需求还是自己改，不喜欢php想换成js也可以；以前自己试过反代，还是小范围用的，没两天弄死一个好域名，不敢了，上谷歌大家还是自备梯子吧，这里不提供了。  
