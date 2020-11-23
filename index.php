@@ -53,7 +53,7 @@ if (empty($q)) {
         success: function(res) {
             //var bgimg;
             var x=Math.floor(Math.random()*9);
-            $("body").append('<style> body{background:url("https://cn.bing.com/'+res.images[x].url+'") no-repeat center/cover;}</style>');
+            $("body").append('<style> body{background:url("https://cn.bing.com'+res.images[x].url+'") no-repeat center/cover;}</style>');
         }
     });
     /*随机bing背景end*/
