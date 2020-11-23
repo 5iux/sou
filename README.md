@@ -11,7 +11,7 @@
 
 
 
-### 新增黑暗模式（理论上支持）
+### 新增黑暗模式（理论上支持，跟随系统）
 ![黑暗模式](https://cdn.jsdelivr.net/gh/5iux/sou/dark.jpg)   
 
 
@@ -20,6 +20,8 @@
 
 [Releases](https://github.com/5iux/sou/releases)  
 
+##  Gitee同步更新
+[https://gitee.com/cn5iux/sou](https://gitee.com/cn5iux/sou)   
 
 
 
@@ -45,7 +47,7 @@
 
 ### 天气组件  
 
-[天气API地址](https://dev.heweather.com/widget/simple)
+[天气API地址](https://dev.qweather.com/widget/)
 
 
 
