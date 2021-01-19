@@ -6,7 +6,7 @@
 
 
 ###  GIF示例效果
-![简单搜索](https://cdn.jsdelivr.net/gh/5iux/sou/10.gif)
+![简单搜索](https://i.loli.net/2021/01/19/JsV34pBOcTbZk79.gif)
 > （图片效果，以实际页面为准） 
 
 
