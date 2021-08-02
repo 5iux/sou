@@ -1,8 +1,8 @@
 <?php
 //禁用错误报告
 error_reporting(0);
-$t=htmlspecialchars($_GET["t"]);
-$q=htmlspecialchars($_POST["q"]);
+$t=urlencode($_GET["t"]);
+$q=urlencode($_POST["q"]);
 if (empty($q)) {
 }else{
   if ($t=="b"){
